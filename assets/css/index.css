@@ -17,6 +17,11 @@ body{
     font-family: var(--regular-font);
 }
 
+.section-title{
+    margin: 5vh 10vw;
+    text-align: center;
+}
+
 /*********navbar*********/
 #navigation{
     padding-inline: 10vw;
@@ -85,9 +90,17 @@ body{
     height: 100vh;
 }
 
+#gallery > .section-title{
+    color: white;
+    margin-top: 10vh;
+}
+
 #ring>.img {
-    background-color: var(--blue);
+    /* background-color: var(--blue); */
     position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .ring-container {
@@ -96,7 +109,7 @@ body{
     width: 300px;
     height: 60vh;
     left: 50%;
-    top: 50%;
+    top: calc(50% + 10vh);
     transform: translate(-50%, -50%);
 }
 
