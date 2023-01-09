@@ -1,0 +1,11 @@
+:root {
+    --black: #000000;
+    --pink1: #fe80b6;
+    --pink2: #D60EC6;
+    --purple: #5E0B46;
+    --blue: #2a234e;
+}
+
+*{
+    font-family: Josefin Sans;
+}
