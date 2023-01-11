@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/glitched-writer/lib/index.min.js"></script>
+    <script type="module">
+      import glitchedWriter from 'https://cdn.skypack.dev/glitched-writer';
+    </script>
+</head>
+<body>
+  <div id="test">Welcome to our event</div>
+  <script type="module">
+    import glitchedWriter from 'https://cdn.skypack.dev/glitched-writer';
+    import { wait } from 'https://cdn.skypack.dev/glitched-writer';
+
+    const Writer = new glitchedWriter('#test', { letterize: true });
+    (async  ()=> {
+  await wait(1000);
+  await Writer.write("CODE IN THE DARK ");
+  
+  await wait(1200);
+  await Writer.add(" V2.0");
+  
+  await wait(1500);
+  await Writer.write("This is only the beginning.");
+  await wait(1500);
+  Writer.remove(100)
+
+})();
+
+  
+
+  </script>
+
+</body>
+<img id="bg" src="assets/images/slider/3.png" alt="">
+</html>
+
