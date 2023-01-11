@@ -10,9 +10,16 @@
     <script type="module">
       import glitchedWriter from 'https://cdn.skypack.dev/glitched-writer';
     </script>
+    <script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
+    
 </head>
 <body>
+<img class="glitch" src="assets/images/logo-code-in-the-dark.png">
+
+<div id="anim">
+
   <div id="test">Welcome to our event</div>
+
   <script type="module">
     import glitchedWriter from 'https://cdn.skypack.dev/glitched-writer';
     import { wait } from 'https://cdn.skypack.dev/glitched-writer';
@@ -29,14 +36,15 @@
   await Writer.write("This is only the beginning.");
   await wait(1500);
   Writer.remove(100)
+  PowerGlitch.glitch('.glitch')
 
 })();
-
-  
-
   </script>
+  <img id="bg" src="assets/images/slider/3.png" alt="">
+</div>
 
 </body>
-<img id="bg" src="assets/images/slider/3.png" alt="">
+
+
 </html>
 

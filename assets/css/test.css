@@ -10,7 +10,8 @@
 }
 #bg{opacity: 0.2;
 position: fixed;}
-body {
+
+#anim {
     height: 100vh;
     overflow: hidden;
     display: flex;
@@ -19,7 +20,7 @@ body {
     background-color: #1d1e22;
     background-image: radial-gradient(rgba(66, 195, 200, 0.2), #1d1e22 120%);
 }
-body::after {
+#anim::after {
     content: "";
     position: absolute;
     top: 0;
@@ -359,26 +360,13 @@ body::after {
         transform: skew(5deg) translatex(3px);
    }
 }
-.log {
-    position: absolute;
-    top: 4vh;
-    left: 30px;
-    color: #a5e5d4;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 20px;
+
+.glitch{
     display: flex;
-    flex-direction: column-reverse;
-    font-family: "M PLUS 1p", "Open Sans", sans-serif;
-    text-shadow: 1px 3px 6px rgba(165, 229, 212, 0.5);
-}
-.log::after {
-    content: "";
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: -2px;
-    left: -7px;
-    width: 1px;
-    height: 100%;
-    background: #a5e5d4;
-}
+    width: 50%;
+transform: translate(200px);}
+/************************************/
 
