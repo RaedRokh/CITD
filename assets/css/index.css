@@ -64,7 +64,7 @@ body{
 
 /*********hero Section*******/
 #hero{
-    background-image: linear-gradient(to right, var(--purple), var(--pink2));
+    background-image: linear-gradient(to bottom, var(--black), var(--blue));
     height: 83vh;
 }
 
