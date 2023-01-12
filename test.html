@@ -21,7 +21,9 @@
 
 <div id="anim">
   <div id="test">Welcome to our event</div>
-  <img data-aos="fade-up" class="glitch img-fluid"  src="assets/images/logo-code-in-the-dark.png">
+  <div class="d-flex justify-content-center position-absolute w-100">
+    <img class="glitch img-fluid" src="assets/images/logo-code-in-the-dark.png">
+  </div>
   <img id="bg" src="assets/images/slider/3.png" alt="">
 </div>
 
@@ -42,13 +44,17 @@ await wait(1500);
 await Writer.write("This is only the beginning.");
 await wait(1500);
 await Writer.remove(100);
-
-
-
+PowerGlitch.glitch('.glitch')
 })();
 </script>
 <script>
   AOS.init();
+  function opacitym(){
+    let x=document.getElementsByClassName("glitch");
+    console.log(x[0]);
+    x[0].setAttribute("data-aos","fade-up");
+  }
+  opacitym();
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
