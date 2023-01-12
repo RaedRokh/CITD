@@ -365,8 +365,8 @@ position: fixed;}
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    width: 50%;
-transform: translate(200px);}
+    /* position: absolute; */
+    width: 50vw;
+}
 /************************************/
 
