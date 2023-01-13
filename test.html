@@ -22,11 +22,9 @@
 <div id="anim">
   <div id="test">Welcome to our event</div>
   <div class="reply d-flex justify-content-between w-50">
-    <a href="#nextsection">
-      <div class="yess d-flex">
-        <div id="blink">▶</div>
-        <div id="yes"></div>
-      </div>
+    <a class="yess d-flex" href="#nextsection">
+      <div id="blink">▶</div>
+      <div id="yes"></div>
     </a>
     <div id="no"></div>
   </div>
@@ -57,7 +55,6 @@ let seconds = Math.floor((count % (1000 * 60)) / 1000);
     x[0].setAttribute("data-aos","fade-up");
     PowerGlitch.glitch('.glitch');
     let y=document.getElementsByClassName("bou")[0];
-    console.log(y);
     setTimeout(()=> {
       y.style.opacity=0;}
       ,6700);
@@ -69,6 +66,7 @@ let seconds = Math.floor((count % (1000 * 60)) / 1000);
 
     console.log(x.innerHTML);
   }
+
 
 
   const Writer = new glitchedWriter('#test', { letterize: true });
@@ -85,7 +83,7 @@ let seconds = Math.floor((count % (1000 * 60)) / 1000);
     await Writer.remove(100);
     await opacitym();
     await wait(7000);
-    await Writer.write("Only "+days.toString()+" days, "+hours.toString()+"hours, "+minutes.toString()+" minutes and "+seconds.toString()+" seconds are left.")
+    await Writer.write("Only "+days.toString()+" days, "+hours.toString()+" hours, "+minutes.toString()+" minutes and "+seconds.toString()+" seconds are left.")
     await wait(2500);
     await Writer.write("Would you like to play?")
     await wait(1000);
@@ -97,8 +95,6 @@ let seconds = Math.floor((count % (1000 * 60)) / 1000);
 </script>
 <script>
   AOS.init();
-
- 
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>

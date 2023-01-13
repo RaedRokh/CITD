@@ -8,8 +8,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-#bg{opacity: 0.2;
-position: relative;}
+#bg{
+    opacity: 0.2;
+    position: relative;
+}
 
 #anim {
     
@@ -45,8 +47,13 @@ position: relative;}
         ph: hidden;
    }
 }
-#yes,#blink{pointer-events: stroke;     color: #a5e5d4;;}
-.reply{transform: translateY(100px);}
+#yes,#blink{
+    pointer-events: stroke;     color: #a5e5d4;
+}
+
+.reply{
+    transform: translateY(100px);
+}
 #test,.reply {
     position: absolute;
     padding: 30px;
@@ -372,8 +379,10 @@ position: relative;}
 .bou{
     transition: opacity 1s;
 }
-#blink{animation: blinker 0.9s linear infinite;
-display:none}
+#blink{
+    animation: blinker 0.9s linear infinite;
+    display:none
+}
 @keyframes blinker {
     50%{
         opacity: 0;
