@@ -29,6 +29,7 @@ button {
 	height: 16px;
 	background-color: #fff;
 	border-radius: 100%;
+	border-collapse: separate; 
 	padding: 0;
 	margin: 30px 10px;
 	cursor: pointer;
@@ -49,6 +50,7 @@ button.active:before {
 	opacity: 1;
 }
 button:before {
+	border-collapse: separate; 
 	content: '';
 	display: block;
 	position: absolute;
