@@ -10,25 +10,16 @@
 <body>
 
 
-
-
-
-
-<div class="slider">
-    <div class="slider-inner">
-        <div class="slider-content">
-            
-        </div>
-    </div>
+<div class="container"></div>
+<div id="pagination">
+    <button class="active test1" data-slide="0"></button>
+    <button class="test2" data-slide="1"></button>
+    <button class="test3" data-slide="2"></button>
+    <button class="test4" data-slide="3"></button>
 </div>
- <div class="container">
-    <img src="assets/images/slider/img2.jpg" alt="Image"/>
-	<img src="assets/images/slider/img3.jpg" alt="Image Alt"/>
- </div>
- <div class="container2">
-    <img src="assets/images/slider/img3.jpg" alt="Image"/>
-	<img src="assets/images/slider/img4.jpg" alt="Image Alt"/>
- </div>
+    <script>
+
+    </script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="../dist/hover-effect.umd.js"></script>
     <script src="assets/js/TweenMax.min.js"></script>
@@ -40,16 +31,74 @@
             intensity: 0.5,
             image1: 'assets/images/slider/img2.jpg',
             image2: 'assets/images/slider/img3.jpg',
-            displacementImage: "assets/images/6.jpg" 
+            displacementImage: "assets/images/6.jpg",
+            hover:false
         });
         var myAnimation1 = new hoverEffect({
-            parent: document.querySelector('.container2'),
+            parent: document.querySelector('.container'),
             intensity: 0.5,
             image1: 'assets/images/slider/img3.jpg',
             image2: 'assets/images/slider/img4.jpg',
-            displacementImage: "assets/images/6.jpg" 
+            displacementImage: "assets/images/6.jpg",
+            hover:false
         });
+        var myAnimation2 = new hoverEffect({
+            parent: document.querySelector('.container'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img4.jpg',
+            image2: 'assets/images/slider/img5.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation3 = new hoverEffect({
+            parent: document.querySelector('.container'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img5.jpg',
+            image2: 'assets/images/slider/img2.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        document.querySelector('.test1').addEventListener('click', myAnimation.next);
+        document.querySelector('.test1').addEventListener('click', myAnimation1.previous);
+        document.querySelector('.test1').addEventListener('click', myAnimation2.previous);
+        document.querySelector('.test1').addEventListener('click', myAnimation3.previous);
+        document.querySelector('.test2').addEventListener('click', myAnimation1.next);
+        document.querySelector('.test2').addEventListener('click', myAnimation.previous);
+        document.querySelector('.test2').addEventListener('click', myAnimation2.previous);
+        document.querySelector('.test2').addEventListener('click', myAnimation3.previous);
+        document.querySelector('.test3').addEventListener('click', myAnimation2.next);
+        document.querySelector('.test3').addEventListener('click', myAnimation.previous);
+        document.querySelector('.test3').addEventListener('click', myAnimation3.previous);
+        document.querySelector('.test3').addEventListener('click', myAnimation1.previous);
+        document.querySelector('.test4').addEventListener('click', myAnimation3.next);
+        document.querySelector('.test4').addEventListener('click', myAnimation.previous);
+        document.querySelector('.test4').addEventListener('click', myAnimation1.previous);
+        document.querySelector('.test4').addEventListener('click', myAnimation2.previous);
     </script>
+    <script>
+        let addEvents = function () {
+    let pagButtons = Array.from(
+    document.getElementById("pagination").querySelectorAll("button"));
+    let canvas=Array.from(document.getElementsByTagName("canvas"));
+    pagButtons.forEach((el) => {
+    el.addEventListener("click", function () {
+    
+        console.log(el.getAttribute('data-slide'));
+        document
+          .getElementById("pagination")
+          .querySelectorAll(".active")[0].className = "";
+        canvas[el.getAttribute('data-slide')].style.display="block";
+        for(let i=0; i<pagButtons.length; i++){
+            if (i!=el.getAttribute('data-slide')){
+                canvas[i].style.display="none";
+            }
+        }
+        myAnimation.next;
+        this.className = "active";
+
+         })})}
+addEvents();
+  </script>
 
 
 </body>
