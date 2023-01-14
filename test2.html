@@ -16,7 +16,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="assets/css/test.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+
 </head>
 <body>
   <div class="containerr">
@@ -123,7 +123,7 @@
         var myAnimation = new hoverEffect({
             parent: document.querySelector('.containerr'),
             intensity: 0.5,
-            image1: 'assets/images/slider/img2.jpg',
+            image1: 'assets/images/slider/img3.jpg',
             image2: 'assets/images/slider/img3.jpg',
             displacementImage: "assets/images/6.jpg",
             hover:false
@@ -176,7 +176,10 @@
     document.getElementById("pagination").querySelectorAll("button"));
     let canvas=Array.from(document.getElementsByTagName("canvas"));
     canvas[0].style.display="block";
+    
     let sections=Array.from(document.getElementsByTagName("section"));
+    console.log(canvas[0]);
+    sections[0].style.display="block";
     pagButtons.forEach((el) => {
     el.addEventListener("click", function () {
     

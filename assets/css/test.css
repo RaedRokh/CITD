@@ -15,13 +15,12 @@
 }
 body{overflow-x:hidden}
 #anim {
-    
     height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1d1e2250;
+    background-color: #1d1e2280;
     background-image: radial-gradient(rgba(66, 195, 200, 0.2), #1d1e22 120%);
 }
 #anim::after {
@@ -79,7 +78,7 @@ body{overflow-x:hidden}
     will-change: contents, width;
 }
 #test::before,.reply::before {
-    z-index: -1;
+    z-index: 2;
     color: #d93da5;
 }
 #test.gw-writing,.reply.gw-writing {
