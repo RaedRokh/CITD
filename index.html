@@ -139,62 +139,80 @@
 
     <!---------------Register-------------->
     <section id="register" class="d-flex justify-content-center align-items-center">
-        <div style="height: max-content; display: none;"> 
+        <div id="buttons" class="" style="height: max-content;"> 
             <h1 class="text-center">Are You A</h1>
             <div class="container-fluid" >
                 <div class="row">
                     <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
-                        <a class="btn-3d cta">Participant</a>
+                        <a id="participant" class=" btn-3d cta">Participant</a>
                     </div>
                     <h2 class="col-12 col-lg-2 d-flex justify-content-center align-items-center">OR</h2>
                     <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
-                        <a class="btn-3d">Roister</a>
+                        <a id="roister" class="btn-3d">Roister</a>
                     </div>
                 </div>
             </div>
         </div>
-        <form id="register-form" class="card">
-            <!-- participant or roister -->
-            <div class="form-group">
-                <label for="players">Registration for</label>
-                <select class="form-control" id="players">
-                    <option>Participant</option>
-                    <option>Roister</option>
-                </select>
-            </div>
-            <!-- full name  -->
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Full Name">
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <!-- adress  -->
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+        <div id="register-container" class="container card hide remove">
+            <div class="row">
+                <div id="register-image" class="col-12 col-md-4">
                 </div>
-                <!-- phone  -->
-                <div class="form-group">
-                    <label for="number">Phone Number</label>
-                    <input type="tel" class="form-control" id="number" placeholder="Phone">
+                <div class="col-12 col-md-8">
+                    <form id="register-form" class="">
+                        <!-- full name  -->
+                        <div class="form-group register-input">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control form-control-input" id="name" placeholder="Full Name">
+                        </div>
+                        <!-- adress  -->
+                        <div class="form-group register-input">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control form-control-input" id="email" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <div class="d-flex align-items-baseline">
+                            <!-- phone  -->
+                            <div class="form-group register-input mr-3">
+                                <label for="number">Phone</label>
+                                <input type="tel" class="form-control form-control-input" id="number" placeholder="Phone">
+                            </div>
+                            <!-- unisversity  -->
+                            <div class="form-group register-input">
+                                <label for="university">University</label>
+                                <input type="text" class="form-control form-control-input" id="university" placeholder="University">
+                            </div>
+                        </div>
+                        <div class="d-flex  align-items-baseline">
+                            <!-- junior  -->
+                            <div class="form-group register-input mr-3">
+                                <label for="junior">Junior Entreprise</label>
+                                <input type="text" class="form-control form-control-input" id="junior" placeholder="Junior Entreprise">
+                            </div>
+                            <!-- participant or roister -->
+                            <div class="form-group register-input" >
+                                <label for="players">Registration</label>
+                                <select class="form-control form-control-input" id="players" style="opacity:0.5" disabled>
+                                    <option value="participant">Participant</option>
+                                    <option value="roister">Roister</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="button accept-btn" onclick="addAnimation2()">
+                            Register
+                        </button>
+                    </form>
+                        <div class="thanks thanks1 remove hide">
+                            <h1>WELCOME</h1>
+                            <h1>WELCOME</h1>
+                            <h1>WELCOME</h1>
+                        </div>
+                        <div class="thanks thanks2 remove hide">
+                            <h1>ABOARD!</h1>
+                            <h1>ABOARD!</h1>
+                            <h1>ABOARD!</h1>
+                        </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <!-- unisversity  -->
-                <div class="form-group">
-                    <label for="university">University</label>
-                    <input type="text" class="form-control" id="university" placeholder="University">
-                </div>
-                <!-- junior  -->
-                <div class="form-group">
-                    <label for="junior">Junior Entreprise</label>
-                    <input type="text" class="form-control" id="junior" placeholder="Junior Entreprise">
-                </div>
-            </div>
-            
-           
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
     </section>
 
     <!----------------Loacation-------------------->
@@ -218,6 +236,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <!-- sponsors packages  -->
+    <script src="assets/js/register.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="assets/js/sponsors.js"></script>
     <script src="assets/js/slider.js"></script>  <!--slider-->
