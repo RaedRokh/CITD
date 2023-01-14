@@ -11,24 +11,11 @@
 </head>
 <body>
     <!------------Navbaar-------------->
-    <nav id ="navigation" class="navbar navbar-expand-lg "> 
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto d-flex flex-column">
-                <!-- <li class="navigation-item dropdown">
-                    <a class="navigation-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        //01. &lt;About/&gt;
-                    </a>
-                    <div id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Description</a>
-                        <a class="dropdown-item" href="#">Gallery</a>
-                        <a class="dropdown-item" href="#">Rules</a>
-                    </div>
-                </li> -->
+    <!-- <nav id ="navigation" class="navbar navbar-expand-lg "> 
+        <div class="d-flex justify-content-between align-items-center" id="navbarSupportedContent">
+            <a class="navbar-brand order-1 order-md-2" href="#"><img id="navbar-logo" src="assets/images/sje_logo.png"
+                    alt="Supcom Junior Entreprise Logo"></a>
+            <ul class="navbar-nav mr-auto d-flex flex-column order-2 order-md-1">
                 <li class="navigation-item">
                     <a class="navigation-link" href="#gallery">//01. &lt;About Us/&gt;</a>
                 </li>
@@ -36,9 +23,7 @@
                     <a class="navigation-link" href="#partners">//02. &lt;Partners/&gt;</a>
                 </li>
             </ul>
-            <a class="navbar-brand" href="#"><img id="navbar-logo" src="assets/images/sje_logo.png" alt="Supcom Junior Entreprise Logo"></a>
-            
-            <ul class="navbar-nav ml-auto d-flex flex-column">
+            <ul class="navbar-nav ml-auto d-flex flex-column order-3 order-md-3">
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">//03. &lt;Sponsors/&gt;</a>
                 </li>
@@ -47,10 +32,23 @@
                 </li>
             </ul>
         </div>
-    </nav>
+
+    </nav> -->
+
+    
 
     <!------------- Hero section ------------>
     <section id="hero">
+        <nav id="navigation">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="" class="logo d-flex align-items-center">
+                    <img src="assets/images/sje_logo.png" alt="">
+                    <div class="sje"><span >Supcom Junior Entreprise</span></div>
+                    
+                </a>
+                <a href="#register"><button id="register-navbar" class="button accept-btn">Register</button></a>
+            </div>
+        </nav>
 
     </section>
 
@@ -58,43 +56,79 @@
     <section id="description">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center" style="height: 100vh;">
+                <!-- <div class="col-12 col-md-6 d-flex justify-content-center align-items-center" style="height: 100vh;">
                     <iframe id="description-video" src="https://www.youtube.com/embed/mSKeMHzDpDA"></iframe>
                 </div>
                 <div class="col-12 col-md-6">
-                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam amet quidem aut recusandae. Voluptatum, suscipit necessitatibus dolore cupiditate quia rem eaque at minus nam. Nisi esse nostrum impedit laudantium ducimus.</p>
+                    <h3>Event Description</h3>
+                    <p>Skilled in web development? Or even looking for venting and emancipation? "SUP'COM JUNIOR ENTREPRISE" is announcing its
+                    outstanding event "CODE IN THE DARK" for its 1st edition, which will take place on March 26, 2022, at the Technopole el
+                    Ghazala - Ariana Conference venue. "CODE IN THE DARK" is the perfect place for those who have a keen interest in
+                    programming and development so don't hesitate to join us and learn from each other. The event is free and open to
+                    everyone. It's the best place for you to spend a Saturday evening, and dance far into the night.</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-------------- Rules adn teaser ----------------->
+    <section id="rules-teaser">
+        <h1 class="section-title">Rules</h1>
+        <div id="terminal" class="container card">
+            <div class="terminal-nav">
+                <img id="control-pannels" src="/assets/images/control-pannel.png" alt="">
+            </div>
+            <div id="terminal-body">
+                <p class="terminal-copyright">Code In The Dark [version 2] &copy; Supcom Junior Entreprise. All rights Preserved.</p>
+                <div class="row citd">
+                    <pre class="">
+  _________            .___      
+  \_   ___ \  ____   __| _/____  
+  /    \  \/ /  _ \ / __ |/ __ \ 
+  \     \___(  <_> ) /_/ \  ___/ 
+   \______  /\____/\____ |\___  >
+          \/            \/    \/ 
+</pre>
+                    <pre class="">
+  .___        
+  |   | ____  
+  |   |/    \ 
+  |   |   |  \
+  |___|___|  /
+           \/ 
+</pre>
+                    <pre class="">
+  ___________.__            
+  \__    ___/|  |__   ____  
+    |    |   |  |  \_/ __ \ 
+    |    |   |   Y  \  ___/ 
+    |____|   |___|  /\___  >
+                  \/     \/ 
+                    </pre>
+                    <pre class="">
+  ________                __    
+  \______ \ _____ _______|  | __
+   |    |  \\__  \\_  __ \  |/ /
+   |    `   \/ __ \|  | \/    < 
+  /_______  (____  /__|  |__|_ \
+          \/     \/           \/
+                    </pre>
                 </div>
+                <p>
+                    Supcom\Junior_Entreprise\Code_In_The_Dark\version_2> 
+                    <span id="command"></span>
+                </p>
+                <p id="rules-text" class="hide">
+                    >THREE CHAMPIONS and maybe more!!! <br>
+                    >10 Rounds<br>
+                    >10 competitors, 10 minutes and ONE champion per round <br>
+                    >Only HTML & CSS <br>
+                    >No previews, no external resources <br>
+                </p>
+                <p id="next-command" class="hide">Supcom\Junior_Entreprise\Code_In_The_Dark\version_2></p>
             </div>
         </div>
     </section>
-
-    <!----------------Gallery-------------------->
-    <section id="gallery">
-        <h1 class="section-title">About Last Year</h1>
-        <div class="ring-container">
-            <div id="ring">
-                <div class="img" style="background-image: url('assets/images/slider/1.jpg');"></div>
-                <div class="img"style="background-image: url('assets/images/slider/2.jpg');"></div>
-                <div class="img"style="background-image: url('assets/images/slider/img5.jpg');"></div>
-                <div class="img" style="background-image: url('assets/images/slider/5.jpg');"></div>
-                <div class="img" style="background-image: url('assets/images/slider/7.jpg');"></div>
-                <div class="img" style="background-image: url('assets/images/slider/4.jpg');"></div>
-                <div class="img" style="background-image: url('assets/images/slider/8.jpg');"></div>
-                <div class="img" style="background-image: url('assets/images/slider/img3.jpg');"></div>
-                <div class="img" style="background-image: url('assets/images/slider/9.jpg');"></div>
-                <div class="img" style="background-image: url('assets/images/slider/10.jpg');"></div>
-            </div>
-        </div>
-        <div class="vignette"></div>
-        <div id="dragger"></div>
-    </section>
-
-    <!----------------Rules-------------------->
-
-
-    <!----------------prizes-------------------->
-    
 
     <!----------------Partners--------------------><!----------------Sponsors-------------------->
 
@@ -134,6 +168,28 @@
                 </div>
             </div>
         </section>
+    </section>
+
+
+    <!----------------Gallery-------------------->
+    <section id="gallery">
+        <h1 class="section-title">About Last Year</h1>
+        <div class="ring-container">
+            <div id="ring">
+                <div class="img" style="background-image: url('assets/images/slider/1.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/2.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/img5.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/5.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/7.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/4.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/8.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/img3.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/9.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/10.jpg');"></div>
+            </div>
+        </div>
+        <div class="vignette"></div>
+        <div id="dragger"></div>
     </section>
 
 
@@ -196,7 +252,7 @@
                                 </select>
                             </div>
                         </div>
-                        <button class="button accept-btn" onclick="addAnimation2()">
+                        <button id="register-button-section" class="mt-3 button accept-btn" onclick="addAnimation2()">
                             Register
                         </button>
                     </form>
@@ -218,7 +274,7 @@
     <!----------------Loacation-------------------->
     <section id="location">
         <div class="container py-4">
-            <h1 class="section-title text-center" id="pageHeaderTitle">Location</h1>
+            <h1 class="section-title text-center" id="pageHeaderTitle">Venue</h1>
             <article class="postcard dark blue">
                 <a class="place-link postcard__img_link" href="#">
                     <!-- <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" /> -->
@@ -272,6 +328,7 @@
     <script src="assets/js/register.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="assets/js/sponsors.js"></script>
+    <script src="assets/js/rules.js"></script>
     <script src="assets/js/slider.js"></script>  <!--slider-->
     
 </body>

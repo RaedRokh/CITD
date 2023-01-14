@@ -1,6 +1,6 @@
 let thanks = $(".thanks");
 let buttons = $("#buttons");
-let registerBtn = $(".accept-btn");
+let registerBtn = $("#register-button-section");
 let form = $("#register-form");
 let registerContainer = $("#register-container");
 let participant = $("#participant");
