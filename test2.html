@@ -153,34 +153,35 @@
             hover:false
         });
         let sections=Array.from(document.getElementsByTagName("section"));
+  
+        sections[3].addEventListener('wheel', myAnimation.next);
+        sections[3].addEventListener('wheel', myAnimation1.previous);
+        sections[3].addEventListener('wheel', myAnimation2.previous);
+        sections[3].addEventListener('wheel', myAnimation3.previous);
         document.querySelector('.test1').addEventListener('click', myAnimation.next);
         document.querySelector('.test1').addEventListener('click', myAnimation1.previous);
         document.querySelector('.test1').addEventListener('click', myAnimation2.previous);
         document.querySelector('.test1').addEventListener('click', myAnimation3.previous);
-        sections[0].addEventListener('wheel', myAnimation.next);
-        sections[0].addEventListener('wheel', myAnimation1.previous);
+        sections[0].addEventListener('wheel', myAnimation1.next);
+        sections[0].addEventListener('wheel', myAnimation.previous);
         sections[0].addEventListener('wheel', myAnimation2.previous);
         sections[0].addEventListener('wheel', myAnimation3.previous);
-        sections[1].addEventListener('wheel', myAnimation1.next);
-        sections[1].addEventListener('wheel', myAnimation.previous);
-        sections[1].addEventListener('wheel', myAnimation2.previous);
-        sections[1].addEventListener('wheel', myAnimation3.previous);
         document.querySelector('.test2').addEventListener('click', myAnimation1.next);
         document.querySelector('.test2').addEventListener('click', myAnimation.previous);
         document.querySelector('.test2').addEventListener('click', myAnimation2.previous);
         document.querySelector('.test2').addEventListener('click', myAnimation3.previous);
-        sections[2].addEventListener('wheel', myAnimation2.next);
-        sections[2].addEventListener('wheel', myAnimation.previous);
-        sections[2].addEventListener('wheel', myAnimation3.previous);
-        sections[2].addEventListener('wheel', myAnimation1.previous);
+        sections[1].addEventListener('wheel', myAnimation2.next);
+        sections[1].addEventListener('wheel', myAnimation.previous);
+        sections[1].addEventListener('wheel', myAnimation3.previous);
+        sections[1].addEventListener('wheel', myAnimation1.previous);
         document.querySelector('.test3').addEventListener('click', myAnimation2.next);
         document.querySelector('.test3').addEventListener('click', myAnimation.previous);
         document.querySelector('.test3').addEventListener('click', myAnimation3.previous);
         document.querySelector('.test3').addEventListener('click', myAnimation1.previous);
-        sections[3].addEventListener('wheel', myAnimation3.next);
-        sections[3].addEventListener('wheel', myAnimation.previous);
-        sections[3].addEventListener('wheel', myAnimation1.previous);
-        sections[3].addEventListener('wheel', myAnimation2.previous);
+        sections[2].addEventListener('wheel', myAnimation3.next);
+        sections[2].addEventListener('wheel', myAnimation.previous);
+        sections[2].addEventListener('wheel', myAnimation1.previous);
+        sections[2].addEventListener('wheel', myAnimation2.previous);
         document.querySelector('.test4').addEventListener('click', myAnimation3.next);
         document.querySelector('.test4').addEventListener('click', myAnimation.previous);
         document.querySelector('.test4').addEventListener('click', myAnimation1.previous);
@@ -195,35 +196,67 @@
     canvas[0].style.display="block";
     
     let sections=Array.from(document.getElementsByTagName("section"));
-    console.log(canvas[0]);
     sections[0].style.display="block";
     pagButtons.forEach((el) => {
       
     el.addEventListener("click", function () {
     
-        console.log(el.getAttribute('data-slide'));
         document
           .getElementById("pagination")
           .querySelectorAll(".active")[0].className = "";
-        console.log(canvas[el.getAttribute('data-slide')]);
         canvas[el.getAttribute('data-slide')].style.display="block";
         sections[el.getAttribute('data-slide')].style.display="block";
         for(let i=0; i<pagButtons.length; i++){
             if (i!=el.getAttribute('data-slide')){
+              
                 canvas[i].style.display="none";
                 sections[i].style.display="none";
                 
             }
         }
-        myAnimation.next;
+     
         this.className = "active";
 
          })})
-         
-        }
+
+    
+    sections.forEach((el) => {
+      el.addEventListener("wheel", function () {
+
+        document
+          .getElementById("pagination")
+          .querySelectorAll(".active")[0].className = "";
+        console.log(canvas[sections.indexOf(el)+1]);
+
+        if (sections.indexOf(el)!=3) {
+          canvas[sections.indexOf(el)+1].style.display="block";
+        sections[sections.indexOf(el)+1].style.display="block";
+        for(let i=0; i<sections.length; i++){
+            if (i!=sections.indexOf(el)+1){
+              console.log(i);
+                canvas[i].style.display="none";
+                sections[i].style.display="none"; }
+
+    }
+    pagButtons[sections.indexOf(el)+1].className = "active";}
+    else{
+      for(let i=1; i<sections.length; i++){
+            if (i!=sections.indexOf(el)+1){
+              console.log(i);
+                canvas[i].style.display="none";
+                sections[i].style.display="none"; }
+    }
+     
+      canvas[0].style.display="block";
+        sections[0].style.display="block";
+        pagButtons[0].className = "active";}
+  })})
+    }
+        
     
 addEvents();
   </script>
+
 
 
 </body>
