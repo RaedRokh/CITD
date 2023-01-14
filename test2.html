@@ -152,18 +152,35 @@
             displacementImage: "assets/images/6.jpg",
             hover:false
         });
+        let sections=Array.from(document.getElementsByTagName("section"));
         document.querySelector('.test1').addEventListener('click', myAnimation.next);
         document.querySelector('.test1').addEventListener('click', myAnimation1.previous);
         document.querySelector('.test1').addEventListener('click', myAnimation2.previous);
         document.querySelector('.test1').addEventListener('click', myAnimation3.previous);
+        sections[0].addEventListener('wheel', myAnimation.next);
+        sections[0].addEventListener('wheel', myAnimation1.previous);
+        sections[0].addEventListener('wheel', myAnimation2.previous);
+        sections[0].addEventListener('wheel', myAnimation3.previous);
+        sections[1].addEventListener('wheel', myAnimation1.next);
+        sections[1].addEventListener('wheel', myAnimation.previous);
+        sections[1].addEventListener('wheel', myAnimation2.previous);
+        sections[1].addEventListener('wheel', myAnimation3.previous);
         document.querySelector('.test2').addEventListener('click', myAnimation1.next);
         document.querySelector('.test2').addEventListener('click', myAnimation.previous);
         document.querySelector('.test2').addEventListener('click', myAnimation2.previous);
         document.querySelector('.test2').addEventListener('click', myAnimation3.previous);
+        sections[2].addEventListener('wheel', myAnimation2.next);
+        sections[2].addEventListener('wheel', myAnimation.previous);
+        sections[2].addEventListener('wheel', myAnimation3.previous);
+        sections[2].addEventListener('wheel', myAnimation1.previous);
         document.querySelector('.test3').addEventListener('click', myAnimation2.next);
         document.querySelector('.test3').addEventListener('click', myAnimation.previous);
         document.querySelector('.test3').addEventListener('click', myAnimation3.previous);
         document.querySelector('.test3').addEventListener('click', myAnimation1.previous);
+        sections[3].addEventListener('wheel', myAnimation3.next);
+        sections[3].addEventListener('wheel', myAnimation.previous);
+        sections[3].addEventListener('wheel', myAnimation1.previous);
+        sections[3].addEventListener('wheel', myAnimation2.previous);
         document.querySelector('.test4').addEventListener('click', myAnimation3.next);
         document.querySelector('.test4').addEventListener('click', myAnimation.previous);
         document.querySelector('.test4').addEventListener('click', myAnimation1.previous);
@@ -181,6 +198,7 @@
     console.log(canvas[0]);
     sections[0].style.display="block";
     pagButtons.forEach((el) => {
+      
     el.addEventListener("click", function () {
     
         console.log(el.getAttribute('data-slide'));
@@ -200,7 +218,10 @@
         myAnimation.next;
         this.className = "active";
 
-         })})}
+         })})
+         
+        }
+    
 addEvents();
   </script>
 
