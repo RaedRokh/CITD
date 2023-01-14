@@ -16,9 +16,17 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="assets/css/test.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-
+  <div class="containerr">
+<div id="pagination">
+    <button class="active test1" data-slide="0"></button>
+    <button class="test2" data-slide="1"></button>
+    <button class="test3" data-slide="2"></button>
+    <button class="test4" data-slide="3"></button>
+</div>
+<section>
     <div id="anim">
         <div id="test">Welcome to our event</div>
         <div class="reply d-flex justify-content-between w-50">
@@ -28,14 +36,24 @@
           </a>
           <div id="no"></div>
         </div>
-      
+    
       
         <div class="bou d-flex justify-content-center position-absolute w-100">
           <img class="glitch img-fluid" src="assets/images/logo-code-in-the-dark.png">
         </div>
-        <img id="bg" src="assets/images/slider/3.png" alt="">
+        <div style="width: 100vw;"></div>
       </div>
-      
+</section>  
+<section>
+  <div>test1</div>
+</section>
+<section>
+  <div>test2</div>
+</section>
+<section>
+  <div>test3</div>
+</section>
+</div>
       
       <script type="module">
         import glitchedWriter from 'https://cdn.skypack.dev/glitched-writer';
@@ -94,25 +112,16 @@
         AOS.init();
       </script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<div class="container"></div>
-<div id="pagination">
-    <button class="active test1" data-slide="0"></button>
-    <button class="test2" data-slide="1"></button>
-    <button class="test3" data-slide="2"></button>
-    <button class="test4" data-slide="3"></button>
-</div>
     <script>
 
     </script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="../dist/hover-effect.umd.js"></script>
     <script src="assets/js/TweenMax.min.js"></script>
     <script src="assets/js/three.min.js"></script>
     <script src="assets/js/hover-effect.umd.js"></script>
     <script>
         var myAnimation = new hoverEffect({
-            parent: document.querySelector('.container'),
+            parent: document.querySelector('.containerr'),
             intensity: 0.5,
             image1: 'assets/images/slider/img2.jpg',
             image2: 'assets/images/slider/img3.jpg',
@@ -120,7 +129,7 @@
             hover:false
         });
         var myAnimation1 = new hoverEffect({
-            parent: document.querySelector('.container'),
+            parent: document.querySelector('.containerr'),
             intensity: 0.5,
             image1: 'assets/images/slider/img3.jpg',
             image2: 'assets/images/slider/img4.jpg',
@@ -128,7 +137,7 @@
             hover:false
         });
         var myAnimation2 = new hoverEffect({
-            parent: document.querySelector('.container'),
+            parent: document.querySelector('.containerr'),
             intensity: 0.5,
             image1: 'assets/images/slider/img4.jpg',
             image2: 'assets/images/slider/img5.jpg',
@@ -136,7 +145,7 @@
             hover:false
         });
         var myAnimation3 = new hoverEffect({
-            parent: document.querySelector('.container'),
+            parent: document.querySelector('.containerr'),
             intensity: 0.5,
             image1: 'assets/images/slider/img5.jpg',
             image2: 'assets/images/slider/img2.jpg',
@@ -161,10 +170,13 @@
         document.querySelector('.test4').addEventListener('click', myAnimation2.previous);
     </script>
     <script>
+    
         let addEvents = function () {
     let pagButtons = Array.from(
     document.getElementById("pagination").querySelectorAll("button"));
     let canvas=Array.from(document.getElementsByTagName("canvas"));
+    canvas[0].style.display="block";
+    let sections=Array.from(document.getElementsByTagName("section"));
     pagButtons.forEach((el) => {
     el.addEventListener("click", function () {
     
@@ -172,10 +184,14 @@
         document
           .getElementById("pagination")
           .querySelectorAll(".active")[0].className = "";
+        console.log(canvas[el.getAttribute('data-slide')]);
         canvas[el.getAttribute('data-slide')].style.display="block";
+        sections[el.getAttribute('data-slide')].style.display="block";
         for(let i=0; i<pagButtons.length; i++){
             if (i!=el.getAttribute('data-slide')){
                 canvas[i].style.display="none";
+                sections[i].style.display="none";
+                
             }
         }
         myAnimation.next;

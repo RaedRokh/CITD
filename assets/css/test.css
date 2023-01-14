@@ -11,8 +11,9 @@
 #bg{
     opacity: 0.2;
     position: relative;
+    width: 100vw;
 }
-
+body{overflow-x:hidden}
 #anim {
     
     height: 100vh;
@@ -20,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1d1e22;
+    background-color: #1d1e2250;
     background-image: radial-gradient(rgba(66, 195, 200, 0.2), #1d1e22 120%);
 }
 #anim::after {
