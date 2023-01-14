@@ -11,34 +11,19 @@
 </head>
 <body>
     <!------------Navbaar-------------->
-    <nav id ="navigation" class="navbar navbar-expand-lg "> 
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto d-flex flex-column">
-                <!-- <li class="navigation-item dropdown">
-                    <a class="navigation-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        //01. &lt;About/&gt;
-                    </a>
-                    <div id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Description</a>
-                        <a class="dropdown-item" href="#">Gallery</a>
-                        <a class="dropdown-item" href="#">Rules</a>
-                    </div>
-                </li> -->
+    <!-- <nav id ="navigation" class="navbar navbar-expand-lg "> 
+        <div class="d-flex justify-content-between align-items-center" id="navbarSupportedContent">
+            <a class="navbar-brand order-1 order-md-2" href="#"><img id="navbar-logo" src="assets/images/sje_logo.png"
+                    alt="Supcom Junior Entreprise Logo"></a>
+            <ul class="navbar-nav mr-auto d-flex flex-column order-2 order-md-1">
                 <li class="navigation-item">
                     <a class="navigation-link" href="#gallery">//01. &lt;About Us/&gt;</a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="#">//02. &lt;Partners/&gt;</a>
+                    <a class="navigation-link" href="#partners">//02. &lt;Partners/&gt;</a>
                 </li>
             </ul>
-            <a class="navbar-brand" href="#"><img id="navbar-logo" src="assets/images/sje_logo.png" alt="Supcom Junior Entreprise Logo"></a>
-            
-            <ul class="navbar-nav ml-auto d-flex flex-column">
+            <ul class="navbar-nav ml-auto d-flex flex-column order-3 order-md-3">
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">//03. &lt;Sponsors/&gt;</a>
                 </li>
@@ -47,7 +32,10 @@
                 </li>
             </ul>
         </div>
-    </nav>
+
+    </nav> -->
+
+    
 
     <!------------- Hero section ------------>
 
@@ -68,108 +56,274 @@
     Documentation: type "help" 
     -->
     <section id="hero">
-    
+        <nav id="navigation">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="" class="logo d-flex align-items-center">
+                    <img src="assets/images/sje_logo.png" alt="">
+                    <div class="sje"><span >Supcom Junior Entreprise</span></div>
+                    
+                </a>
+                <a href="#register"><button id="register-navbar" class="button accept-btn">Register</button></a>
+            </div>
+        </nav>
+
     </section>
 
     <!----------------Description-------------------->
     <section id="description">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <img src="assets/images/sje_logo.png" alt="" style="width : 100px;">
+                <!-- <div class="col-12 col-md-6 d-flex justify-content-center align-items-center" style="height: 100vh;">
+                    <iframe id="description-video" src="https://www.youtube.com/embed/mSKeMHzDpDA"></iframe>
                 </div>
                 <div class="col-12 col-md-6">
-                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam amet quidem aut recusandae. Voluptatum, suscipit necessitatibus dolore cupiditate quia rem eaque at minus nam. Nisi esse nostrum impedit laudantium ducimus.</p>
-                </div>
+                    <h3>Event Description</h3>
+                    <p>Skilled in web development? Or even looking for venting and emancipation? "SUP'COM JUNIOR ENTREPRISE" is announcing its
+                    outstanding event "CODE IN THE DARK" for its 1st edition, which will take place on March 26, 2022, at the Technopole el
+                    Ghazala - Ariana Conference venue. "CODE IN THE DARK" is the perfect place for those who have a keen interest in
+                    programming and development so don't hesitate to join us and learn from each other. The event is free and open to
+                    everyone. It's the best place for you to spend a Saturday evening, and dance far into the night.</p>
+                </div> -->
             </div>
         </div>
     </section>
+
+    <!-------------- Rules adn teaser ----------------->
+    <section id="rules-teaser">
+        <h1 class="section-title">Rules</h1>
+        <div id="terminal" class="container card">
+            <div class="terminal-nav">
+                <img id="control-pannels" src="/assets/images/control-pannel.png" alt="">
+            </div>
+            <div id="terminal-body">
+                <p class="terminal-copyright">Code In The Dark [version 2] &copy; Supcom Junior Entreprise. All rights Preserved.</p>
+                <div class="row citd">
+                    <pre class="">
+  _________            .___      
+  \_   ___ \  ____   __| _/____  
+  /    \  \/ /  _ \ / __ |/ __ \ 
+  \     \___(  <_> ) /_/ \  ___/ 
+   \______  /\____/\____ |\___  >
+          \/            \/    \/ 
+</pre>
+                    <pre class="">
+  .___        
+  |   | ____  
+  |   |/    \ 
+  |   |   |  \
+  |___|___|  /
+           \/ 
+</pre>
+                    <pre class="">
+  ___________.__            
+  \__    ___/|  |__   ____  
+    |    |   |  |  \_/ __ \ 
+    |    |   |   Y  \  ___/ 
+    |____|   |___|  /\___  >
+                  \/     \/ 
+                    </pre>
+                    <pre class="">
+  ________                __    
+  \______ \ _____ _______|  | __
+   |    |  \\__  \\_  __ \  |/ /
+   |    `   \/ __ \|  | \/    < 
+  /_______  (____  /__|  |__|_ \
+          \/     \/           \/
+                    </pre>
+                </div>
+                <p>
+                    Supcom\Junior_Entreprise\Code_In_The_Dark\version_2> 
+                    <span id="command"></span>
+                </p>
+                <p id="rules-text" class="hide">
+                    >THREE CHAMPIONS and maybe more!!! <br>
+                    >10 Rounds<br>
+                    >10 competitors, 10 minutes and ONE champion per round <br>
+                    >Only HTML & CSS <br>
+                    >No previews, no external resources <br>
+                </p>
+                <p id="next-command" class="hide">Supcom\Junior_Entreprise\Code_In_The_Dark\version_2></p>
+            </div>
+        </div>
+    </section>
+
+    <!----------------Partners--------------------><!----------------Sponsors-------------------->
+
+    <section id="partners-sponsors">
+        <section id="partners">
+            <h1 class="section-title">Partners</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="partner-1" class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                        <img class="partners-img" src="assets/images/fb.gif" alt="">
+                    </div>
+                    <div id="partner-2" class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                        <img class="partners-img" src="assets/images/insta.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sponsors">
+            <h1 class="section-title">Sponsors</h1>
+            <div class="container">
+                <div id="line1" class="customer-logos slider ">
+                    <div class="slide"><img
+                            src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
+                    </div>
+                    <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+                    <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+                    <div class="slide"><img
+                            src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
+                    </div>
+                    <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
+                    </div>
+                    <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+                    </div>
+                    <div class="slide"><img
+                            src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
 
     <!----------------Gallery-------------------->
     <section id="gallery">
         <h1 class="section-title">About Last Year</h1>
         <div class="ring-container">
             <div id="ring">
-                <div class="img" style="background-image: url('assets/images/slider/img2.jpg');"></div>
-                <div class="img"style="background-image: url('assets/images/slider/img3.jpg');"></div>
-                <div class="img"style="background-image: url('assets/images/slider/img4.jpg');"></div>
-                <div class="img"style="background-image: url('assets/images/slider/img5.jpg');"></div>
-                <div class="img" style="background-image: url('assets/images/slider/main.jpg');"></div>
-                <div class="img" style="background-image: url('assets/images/slider/img2.jpg');"></div>
-                <div class="img" style="background-image: url('assets/images/slider/img3.jpg');"></div>
-                <div class="img" style="background-image: url('assets/images/slider/img4.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/1.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/2.jpg');"></div>
                 <div class="img" style="background-image: url('assets/images/slider/img5.jpg');"></div>
-                <div class="img" style="background-image: url('assets/images/slider/main.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/5.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/7.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/4.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/8.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/img3.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/9.jpg');"></div>
+                <div class="img" style="background-image: url('assets/images/slider/10.jpg');"></div>
             </div>
         </div>
         <div class="vignette"></div>
         <div id="dragger"></div>
     </section>
 
-    <!----------------Rules-------------------->
 
-
-    <!----------------prizes-------------------->
-    
-
-    <!----------------Partners-------------------->
-
-
-    <!----------------Sponsors-------------------->
-    <section id="sponsors">
-        <h1 class="section-title">Our Sponsors</h1>
-        <div class="container py-5 my-5">
-            <div id="line1" class="customer-logos slider">
-                <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
-                </div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
-                </div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
+    <!---------------Register-------------->
+    <section id="register" class="d-flex justify-content-center align-items-center">
+        <div id="buttons" class="" style="height: max-content;"> 
+            <h1 class="text-center">Are You A</h1>
+            <div class="container-fluid" >
+                <div class="row">
+                    <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                        <a id="participant" class=" btn-3d cta">Participant</a>
+                    </div>
+                    <h2 class="col-12 col-lg-2 d-flex justify-content-center align-items-center">OR</h2>
+                    <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                        <a id="roister" class="btn-3d">Roister</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="container">
-            <div id="line2" class="customer-logos slider">
-                <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
-                </div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
-                </div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
-                </div>
-            </div>
-        </div> -->
-    </section>
-
-
-    <!---------------Register-------------->
-    <section id="register">
-        <h1 class="text-center py-5">Are You A</h1>
-        <div class="py-5 container-fluid">
+        <div id="register-container" class="container card hide remove">
             <div class="row">
-                <div class="col-12 col-md-5 d-flex justify-content-center">
-                    <a class="btn-3d cta">Participant</a>
+                <div id="register-image" class="col-12 col-md-4">
                 </div>
-                <h2 class="col-12 col-md-2 d-flex justify-content-center my-5">OR</h2>
-                <div class="col-12 col-md-5 d-flex justify-content-center">
-                    <a class="btn-3d">Roister</a>
+                <div class="col-12 col-md-8">
+                    <form id="register-form" class="">
+                        <!-- full name  -->
+                        <div class="form-group register-input">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control form-control-input" id="name" placeholder="Full Name">
+                        </div>
+                        <!-- adress  -->
+                        <div class="form-group register-input">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control form-control-input" id="email" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <div class="d-flex align-items-baseline">
+                            <!-- phone  -->
+                            <div class="form-group register-input mr-3">
+                                <label for="number">Phone</label>
+                                <input type="tel" class="form-control form-control-input" id="number" placeholder="Phone">
+                            </div>
+                            <!-- unisversity  -->
+                            <div class="form-group register-input">
+                                <label for="university">University</label>
+                                <input type="text" class="form-control form-control-input" id="university" placeholder="University">
+                            </div>
+                        </div>
+                        <div class="d-flex  align-items-baseline">
+                            <!-- junior  -->
+                            <div class="form-group register-input mr-3">
+                                <label for="junior">Junior Entreprise</label>
+                                <input type="text" class="form-control form-control-input" id="junior" placeholder="Junior Entreprise">
+                            </div>
+                            <!-- participant or roister -->
+                            <div class="form-group register-input" >
+                                <label for="players">Registration</label>
+                                <select class="form-control form-control-input" id="players" style="opacity:0.5" disabled>
+                                    <option value="participant">Participant</option>
+                                    <option value="roister">Roister</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button id="register-button-section" class="mt-3 button accept-btn" onclick="addAnimation2()">
+                            Register
+                        </button>
+                    </form>
+                        <div class="thanks thanks1 remove hide">
+                            <h1>WELCOME</h1>
+                            <h1>WELCOME</h1>
+                            <h1>WELCOME</h1>
+                        </div>
+                        <div class="thanks thanks2 remove hide">
+                            <h1>ABOARD!</h1>
+                            <h1>ABOARD!</h1>
+                            <h1>ABOARD!</h1>
+                        </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <!----------------Loacation-------------------->
-
-    
+    <section id="location">
+        <div class="container py-4">
+            <h1 class="section-title text-center" id="pageHeaderTitle">Venue</h1>
+            <article class="postcard dark blue">
+                <a class="place-link postcard__img_link" href="#">
+                    <!-- <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" /> -->
+                    <iframe class="postcard__img"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6381.793326058149!2d10.1884663!3d36.8928203!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2cb723a8fb0f3%3A0x7594e489f0465139!2sSalle%20des%20conf%C3%A9rences!5e0!3m2!1sen!2stn!4v1673698205758!5m2!1sen!2stn"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title blue"><a class="place-link" href="#">Technopole El Ghazela</a></h1>
+                    <div class="postcard__subtitle small">
+                        <time datetime="2020-05-25 12:00:00">
+                            <i class="fas fa-calendar-alt mr-2"></i>Saturday, January 21th 2023 at 1:00 PM
+                        </time>
+                    </div>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Join us at <span class="gras">Salle des conférences technopole el ghazela</span> 
+                        on January 21st, 2023 to be part of our event <span class="gras">Code In The Dark</span> . 
+                        This state-of-the-art conference hall is located in the heart of Technopole El Ghazela.
+                        <br>
+                    Mark your calendars and make sure to be there at time!</div>
+                    <ul class="postcard__tagbox">
+                        <li class="tag__item"><i class="fas fa-tag mr-2"></i>January 21th 2023</li>
+                        <li class="tag__item"><i class="fas fa-clock mr-2 text-center"></i>1:00 PM</li>
+                        <li class="tag__item play blue">
+                            <a class="place-link" href="https://goo.gl/maps/u4URYVcw3qEDRMNo8"><i class="fas fa-play mr-2"></i>Goole Maps</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
     
 
     <!-- slider packages -->
@@ -188,9 +342,11 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <!-- sponsors packages  -->
+    <script src="assets/js/register.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glitched-writer/lib/index.min.js"></script>
     <script src="assets/js/sponsors.js"></script>
+    <script src="assets/js/rules.js"></script>
     <script src="assets/js/slider.js"></script>  <!--slider-->
     
 </body>
