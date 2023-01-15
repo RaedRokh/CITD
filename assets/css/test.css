@@ -48,7 +48,7 @@ body{overflow-x:hidden}
    }
 }
 #yes,#blink{
-    pointer-events: stroke;     color: #a5e5d4;
+    pointer-events: stroke;     color: #8bffde;
 }
 
 .reply{
@@ -57,8 +57,8 @@ body{overflow-x:hidden}
 #test,.reply {
     position: absolute;
     padding: 30px;
-    font-size: 35px;
-    color: #a5e5d4;
+    font-size: px;
+    color: #8bffde;
     will-change: contents, width;
     font-family: 'Share Tech Mono';
     text-shadow: 2px 4px 10px rgba(165, 229, 212, 0.5);
