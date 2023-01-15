@@ -1,0 +1,79 @@
+.containerr,.container2,.container3,.container4{
+    display: block;
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+}
+section{
+	position: absolute;
+	z-index: 100;
+	display: none;
+}
+canvas{width: 100vw;
+height: 100vh;
+position: absolute;
+z-index: 1;
+display: none;}
+canvas:first-child{display:block};
+
+*{margin:0;}
+
+#pagination{
+	position: absolute;
+	z-index: 999999;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 30px;
+}
+
+
+#pagination > button {
+	display: block;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 0;
+	width: 16px;
+	height: 16px;
+	background-color:#FFFF;
+	border-radius: 100%;
+	border-collapse: separate; 
+	padding: 0;
+	margin: 30px 10px;
+	cursor: pointer;
+	position: relative;
+	opacity: 0.2;
+	transition: opacity 0.2s ease-in-out;
+	outline: none;
+}
+#pagination > button:hover {
+	opacity: 0.5;
+}
+#pagination > button.active {
+	opacity: 1;
+}
+#pagination > button.active:before {
+	width: 300%;
+	height: 300%;
+	opacity: 1;
+}
+#pagination > button:before {
+	border-collapse: separate; 
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+
+/* * {
+    margin: 0;
+} */

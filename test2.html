@@ -5,21 +5,324 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/test2.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/glitched-writer/lib/index.min.js"></script>
+    <script type="module">
+      import glitchedWriter from 'https://cdn.skypack.dev/glitched-writer';
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="assets/css/test.css">
+
 </head>
 <body>
-    <div class="my-div"></div>
-    <script src="three.min.js"></script>
-<script src="TweenMax.min.js"></script>
+  <div class="containerr">
+<div id="pagination">
+    <button class="active test1" data-slide="0"></button>
+    <button class="test2" data-slide="1"></button>
+    <button class="test3" data-slide="2"></button>
+    <button class="test4" data-slide="3"></button>
+    <button class="test5" data-slide="4"></button>
+    <button class="test6" data-slide="5"></button>
+    <button class="test7" data-slide="6"></button>
+    <button class="test8" data-slide="7"></button>
+    <button class="test9" data-slide="8"></button>
+    <button class="test10" data-slide="9"></button>
+</div>
+<section>
+    <div id="anim">
+        <div id="test">Welcome to our event</div>
+        <div class="reply d-flex justify-content-between w-50">
+          <a class="yess d-flex" href="#nextsection">
+            <div id="blink">▶</div>
+            <div id="yes"></div>
+          </a>
+          <div id="no"></div>
+        </div>
+    
+      
+        <div class="bou d-flex justify-content-center position-absolute w-100">
+          <img class="glitch img-fluid" src="assets/images/logo-code-in-the-dark.png">
+        </div>
+        <div style="width: 100vw;"></div>
+      </div>
+</section>  
+<section>
+  <div>test1</div>
+</section>
+<section>
+  <div>test2</div>
+</section>
+<section>
+  <div>test3</div>
+</section>
+<section>
+  <div>test4</div>
+</section>
+<section>
+  <div>test5</div>
+</section>
+<section>
+  <div>test6</div>
+</section>
+<section>
+  <div>test7</div>
+</section>
+<section>
+  <div>test8</div>
+</section>
+<section>
+  <div>test9</div>
+</section>
+</div>
+      
+      <script type="module">
+        import glitchedWriter from 'https://cdn.skypack.dev/glitched-writer';
+        import { wait } from 'https://cdn.skypack.dev/glitched-writer';
+        let datenow=new Date().getTime();;
+        let dateEvent=new Date('January 21,2023 13:00:00').getTime();;
+        let count=dateEvent-datenow;
+        let days=Math.floor(count / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((count % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((count % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((count % (1000 * 60)) / 1000);
+      
+        function opacitym(){
+          let x=document.getElementsByClassName("glitch");
+        
+          x[0].setAttribute("opacity","1");
+          x[0].setAttribute("data-aos","fade-up");
+          PowerGlitch.glitch('.glitch');
+          let y=document.getElementsByClassName("bou")[0];
+          setTimeout(()=> {
+            y.style.opacity=0;}
+            ,6700);
 
-<script src="dist/hover.umd.js"></script>
-<script>
-    var myAnimation = new hoverEffect({
-        parent: document.querySelector('.my-div'),
-        intensity: 0.3,
-        image1: 'assets/images/slider/img2.jpg',
-        image2: 'assets/images/slider/img3.jpg',
-        displacementImage: 'https://i7x7p5b7.stackpathcdn.com/codrops/wp-content/uploads/2018/04/1.jpg'
-    });
-</script>
+        }
+        function blinky(){
+          let x=document.getElementById("blink");
+          x.style.display="block";
+      
+          console.log(x.innerHTML);
+        }
+        const Writer = new glitchedWriter('#test', { letterize: true });
+        const Writer1 = new glitchedWriter('#yes', { letterize: true });
+        const Writer2 = new glitchedWriter('#no', { letterize: true });
+        (async  ()=> {
+          await wait(1000);
+          await Writer.write("CODE IN THE DARK ");
+          await wait(1200);
+          await Writer.add(" V2.0");
+          await wait(1500);
+          await Writer.write("This is only the beginning.");
+          await wait(1500);
+          await Writer.remove(100);
+          await opacitym();
+          await wait(7000);
+          await Writer.write("Only "+days.toString()+" days, "+hours.toString()+" hours, "+minutes.toString()+" minutes and "+seconds.toString()+" seconds are left.")
+          await wait(2500);
+          await Writer.write("Would you like to play?")
+          await wait(1000);
+          await Writer1.write("Yes");
+          await blinky();
+          await wait(1000);
+          await Writer2.write("No");
+      })();
+      </script>
+      <script>
+        AOS.init();
+      </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+
+    </script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/three.min.js"></script>
+    <script src="assets/js/hover-effect.umd.js"></script>
+    <script>
+        var myAnimation0 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img3.jpg',
+            image2: 'assets/images/slider/img3.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation1 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img3.jpg',
+            image2: 'assets/images/slider/img4.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation2 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img4.jpg',
+            image2: 'assets/images/slider/img5.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation3 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img5.jpg',
+            image2: 'assets/images/slider/img6.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation4 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img6.jpg',
+            image2: 'assets/images/slider/img7.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation5 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img7.jpg',
+            image2: 'assets/images/slider/img8.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation6 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img8.jpg',
+            image2: 'assets/images/slider/img9.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation7 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img9.jpg',
+            image2: 'assets/images/slider/img10.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation8 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img10.jpg',
+            image2: 'assets/images/slider/img11.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation9 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img11.jpg',
+            image2: 'assets/images/slider/img12.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        console.log(this["myAnimation"+1].next == myAnimation1.next)
+        let sections=Array.from(document.getElementsByTagName("section"));
+        for (i=0; i<sections.length;i++){
+          if (i!=sections.length-1){
+          console.log('i',i);
+          sections[i].addEventListener('wheel', (this["myAnimation"+(i+1)]).next);
+          document.querySelector('.test'+(i+2).toString()).addEventListener('click', (this["myAnimation"+(i+1)]).next);
+          for (j=0; j<sections.length; j++){
+            if (j!=i+1){
+              console.log(sections.length-1);
+            sections[i].addEventListener('wheel', this["myAnimation"+(j)].previous);
+            document.querySelector('.test'+(i+2).toString()).addEventListener('click', this["myAnimation"+(j)].previous)
+            }
+          }}
+          else{
+            console.log('ij',i)
+            sections[i].addEventListener('wheel', (this["myAnimation"+(0)]).next);
+          document.querySelector('.test'+(1).toString()).addEventListener('click', (this["myAnimation"+(0)]).next);
+          for (j=1; j<sections.length; j++){
+              console.log('j',j);
+            sections[i].addEventListener('wheel', this["myAnimation"+(j)].previous);
+            document.querySelector('.test'+(1).toString()).addEventListener('click', this["myAnimation"+(j)].previous)
+            
+          }
+ 
+          }
+        }
+    </script>
+    <script>
+    
+        let addEvents = function () {
+    let pagButtons = Array.from(
+    document.getElementById("pagination").querySelectorAll("button"));
+    let canvas=Array.from(document.getElementsByTagName("canvas"));
+    canvas[0].style.display="block";
+    
+    let sections=Array.from(document.getElementsByTagName("section"));
+    sections[0].style.display="block";
+    pagButtons.forEach((el) => {
+    
+    el.addEventListener("click", function () {      
+    
+        document
+          .getElementById("pagination")
+          .querySelectorAll(".active")[0].className = "";
+        canvas[el.getAttribute('data-slide')].style.display="block";
+        sections[el.getAttribute('data-slide')].style.display="block";
+        for(let i=0; i<pagButtons.length; i++){
+            if (i!=el.getAttribute('data-slide')){
+              
+                canvas[i].style.display="none";
+                sections[i].style.display="none";
+                
+            }
+        }
+     
+        this.className = "active";
+
+         })})
+
+    
+    sections.forEach((el) => {
+      el.addEventListener("wheel", function () {
+
+        document
+          .getElementById("pagination")
+          .querySelectorAll(".active")[0].className = "";
+        console.log(canvas[sections.indexOf(el)+1]);
+
+        if (sections.indexOf(el)!=9) {
+          canvas[sections.indexOf(el)+1].style.display="block";
+        sections[sections.indexOf(el)+1].style.display="block";
+        for(let i=0; i<sections.length; i++){
+            if (i!=sections.indexOf(el)+1){
+              console.log(i);
+                canvas[i].style.display="none";
+                sections[i].style.display="none"; }
+
+    }
+    pagButtons[sections.indexOf(el)+1].className = "active";}
+    else{
+      for(let i=1; i<sections.length; i++){
+            if (i!=sections.indexOf(el)+1){
+              console.log(i);
+                canvas[i].style.display="none";
+                sections[i].style.display="none"; }
+    }
+     
+      canvas[0].style.display="block";
+        sections[0].style.display="block";
+        pagButtons[0].className = "active";}
+  })})
+    }
+        
+    
+addEvents();
+  </script>
+
+
+
 </body>
 </html>

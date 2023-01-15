@@ -13,6 +13,8 @@ function clickHandler() {
     setTimeout(() => {
         formCard.removeClass("remove");
         buttons.addClass("remove");
+        buttons.css("visibility", "hidden");
+        buttons.css("display", "none");
         setTimeout(() => {
             formCard.removeClass("hide");
         }, 300);
