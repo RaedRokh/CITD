@@ -154,16 +154,17 @@
         });
         
         function anime(i){
-          hoverEffect({
+          return new hoverEffect({
             parent: document.querySelector('.containerr'),
             intensity: 0.5,
-            image1: 'assets/images/slider/img'+i.toString()+'.jpg',
-            image2: 'assets/images/slider/img'+i.toString()+'.jpg',
+            image1: 'assets/images/slider/img'+(i+2).toString()+'.jpg',
+            image2: 'assets/images/slider/img'+(i+3).toString()+'.jpg',
             displacementImage: "assets/images/6.jpg",
             hover:false
         })
         }
-        console.log(anime(2));
+        console.log(myAnimation1.next)
+        console.log(anime(1).next);
         let sections=Array.from(document.getElementsByTagName("section"));
   
         sections[3].addEventListener('wheel', myAnimation.next);
@@ -178,7 +179,7 @@
         sections[0].addEventListener('wheel', myAnimation.previous);
         sections[0].addEventListener('wheel', myAnimation2.previous);
         sections[0].addEventListener('wheel', myAnimation3.previous);
-        document.querySelector('.test2').addEventListener('click', myAnimation1.next);
+        document.querySelector('.test2').addEventListener('click', anime(1).next);
         document.querySelector('.test2').addEventListener('click', myAnimation.previous);
         document.querySelector('.test2').addEventListener('click', myAnimation2.previous);
         document.querySelector('.test2').addEventListener('click', myAnimation3.previous);
