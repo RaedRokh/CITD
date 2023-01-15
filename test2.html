@@ -25,6 +25,12 @@
     <button class="test2" data-slide="1"></button>
     <button class="test3" data-slide="2"></button>
     <button class="test4" data-slide="3"></button>
+    <button class="test5" data-slide="4"></button>
+    <button class="test6" data-slide="5"></button>
+    <button class="test7" data-slide="6"></button>
+    <button class="test8" data-slide="7"></button>
+    <button class="test9" data-slide="8"></button>
+    <button class="test10" data-slide="9"></button>
 </div>
 <section>
     <div id="anim">
@@ -52,6 +58,24 @@
 </section>
 <section>
   <div>test3</div>
+</section>
+<section>
+  <div>test4</div>
+</section>
+<section>
+  <div>test5</div>
+</section>
+<section>
+  <div>test6</div>
+</section>
+<section>
+  <div>test7</div>
+</section>
+<section>
+  <div>test8</div>
+</section>
+<section>
+  <div>test9</div>
 </section>
 </div>
       
@@ -148,7 +172,55 @@
             parent: document.querySelector('.containerr'),
             intensity: 0.5,
             image1: 'assets/images/slider/img5.jpg',
-            image2: 'assets/images/slider/img2.jpg',
+            image2: 'assets/images/slider/img6.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation4 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img6.jpg',
+            image2: 'assets/images/slider/img7.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation5 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img7.jpg',
+            image2: 'assets/images/slider/img8.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation6 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img8.jpg',
+            image2: 'assets/images/slider/img9.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation7 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img9.jpg',
+            image2: 'assets/images/slider/img10.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation8 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img10.jpg',
+            image2: 'assets/images/slider/img11.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation9 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img11.jpg',
+            image2: 'assets/images/slider/img12.jpg',
             displacementImage: "assets/images/6.jpg",
             hover:false
         });
@@ -221,7 +293,7 @@
           .querySelectorAll(".active")[0].className = "";
         console.log(canvas[sections.indexOf(el)+1]);
 
-        if (sections.indexOf(el)!=3) {
+        if (sections.indexOf(el)!=9) {
           canvas[sections.indexOf(el)+1].style.display="block";
         sections[sections.indexOf(el)+1].style.display="block";
         for(let i=0; i<sections.length; i++){
