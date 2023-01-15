@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/test.css">
+    <link rel="stylesheet" href="assets/css/test2.css">
 </head>
 
 <body>
@@ -65,6 +67,18 @@
     23/3/2021, 18:39
     Documentation: type "help" 
     -->
+    <div class="containerr">
+        <div id="pagination">
+            <button class="active test1" data-slide="0"></button>
+            <button class="test2" data-slide="1"></button>
+            <button class="test3" data-slide="2"></button>
+            <button class="test4" data-slide="3"></button>
+            <button class="test5" data-slide="4"></button>
+            <button class="test6" data-slide="5"></button>
+            <button class="test7" data-slide="6"></button>
+            <button class="test8" data-slide="7"></button>
+            <button class="test9" data-slide="8"></button>
+        </div>
     <section id="hero">
         <nav id="navigation">
             <div class="d-flex justify-content-between align-items-center">
@@ -91,7 +105,7 @@
             <div class="bou d-flex justify-content-center position-absolute w-100">
                 <img class="glitch img-fluid" src="assets/images/logo-code-in-the-dark.png">
             </div>
-            <img id="bg" src="assets/images/slider/3.png" alt="">
+            <img id="bg" style="width: 100vw;" alt="">
         </div>
 
     </section>
@@ -99,18 +113,23 @@
     <!----------------Description-------------------->
     <section id="description">
         <div class="container-fluid">
-            <div class="row">
-                <!-- <div class="col-12 col-md-6 d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <div class="row px-md-5" style="height: 100vh;">
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
                     <iframe id="description-video" src="https://www.youtube.com/embed/mSKeMHzDpDA"></iframe>
                 </div>
-                <div class="col-12 col-md-6">
-                    <h3>Event Description</h3>
-                    <p>Skilled in web development? Or even looking for venting and emancipation? "SUP'COM JUNIOR ENTREPRISE" is announcing its
-                    outstanding event "CODE IN THE DARK" for its 1st edition, which will take place on March 26, 2022, at the Technopole el
-                    Ghazala - Ariana Conference venue. "CODE IN THE DARK" is the perfect place for those who have a keen interest in
-                    programming and development so don't hesitate to join us and learn from each other. The event is free and open to
-                    everyone. It's the best place for you to spend a Saturday evening, and dance far into the night.</p>
-                </div> -->
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center text-center text-md-left">
+                    <div>
+                        <h3 class="py-md-5">Event Description</h3>
+                        <p>Skilled in web development? Or even looking for venting and emancipation? "SUP'COM JUNIOR ENTREPRISE" is announcing
+                            its
+                            outstanding event "CODE IN THE DARK" for its 1st edition, which will take place on March 26, 2022, at the Technopole
+                            el
+                            Ghazala - Ariana Conference venue. "CODE IN THE DARK" is the perfect place for those who have a keen interest in
+                            programming and development so don't hesitate to join us and learn from each other. The event is free and open to
+                            everyone. It's the best place for you to spend a Saturday evening, and dance far into the night.
+                        </p>
+                    </div>
+                    </div>
             </div>
         </div>
     </section>
@@ -123,9 +142,8 @@
                 <img id="control-pannels" src="/assets/images/control-pannel.png" alt="">
             </div>
             <div id="terminal-body">
-                <p class="terminal-copyright">Code In The Dark [version 2] &copy; Supcom Junior Entreprise. All rights
-                    Preserved.</p>
-                <div class="row citd">
+                <p class="terminal-copyright">Code In The Dark [version 2] &copy; Supcom Junior Entreprise. All rights Preserved.</p>
+                <div class="row citd ml-1">
                     <pre class="">
   _________            .___      
   \_   ___ \  ____   __| _/____  
@@ -178,7 +196,7 @@
     <!----------------Partners--------------------><!----------------Sponsors-------------------->
 
     <section id="partners-sponsors">
-        <section id="partners">
+        <div id="partners">
             <h1 class="section-title">Partners</h1>
             <div class="container-fluid">
                 <div class="row">
@@ -190,8 +208,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="sponsors">
+        </div>
+        <div id="sponsors">
             <h1 class="section-title">Sponsors</h1>
             <div class="container">
                 <div id="line1" class="customer-logos slider ">
@@ -215,7 +233,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </section>
 
 
@@ -366,6 +384,345 @@
     </section>
 
 
+    <!-- faq  -->
+    <section id="faq" >
+        <h1 class="section-title">FAQ</h1>
+        <div class="container chatbox-container">
+            <div class="card chatbox-card ">
+                <div class="row chatbox-row">
+                    <div class="col-12 col-md-6 chat-section d-flex flex-column justify-content-between">
+                        <div class="chat-messages-title">
+                            <h3>Chat</h3>
+                        </div>
+                        <div class="chat-messages scrollbar">
+                            <div class="bot-message">
+                                <div class="chat-message">
+                                    <p>Feel free to ask me any question from the list !</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <div class="form-group mx-3">
+                                <input type="text" class="form-control chat-input" placeholder="Choose a Question" disabled style="opacity: 0.5;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prevent remove"></div>
+                    <div class="col-12 col-md-6 questions d-flex flex-column justify-content-between">
+                        <!-- <h1>Questions</h1> -->
+                        <div class="questions-container scrollbar2">
+                            <!-- here goes the question with js -->
+                        </div>
+                        <div class="chat-messages-title">
+                            <h3>Questions</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+    </section>
+
+    <!-- contact us  + footer -->
+        <!-- <div id="cover-contact"> -->
+    
+    
+            <section id="contact" class="">
+                <h1 class="section-title">Contact Us</h1>
+                <div class=" container-fluid">
+                    <div class="row contact-content">
+                        <div class="col-12 col-md-6 order-2 order-md-1 d-flex align-items-center justify-content-center">
+                            <div class="card contact-card">
+                                <div class="coordinate">
+                                    <img src="/assets/images/location-map.png" alt="">
+                                    <p>Supcom ,
+                                        Cité Technologique des Communication</p>
+                            
+                                </div>
+                                <div class="coordinate">
+                                    <img src="/assets/images/mail.png" alt="">
+                                    <p>junior.entreprise@supcom.tn</p>
+                                </div>
+                                <div class="coordinate">
+                                    <img src="/assets/images/phone.png" alt="">
+                                    <p>(216) 23 010 042</p>
+                                </div>
+                                <!-- <div class="coordinate">
+                                    <img src="/assets/images/working.png" alt="">
+                                    <p>Mon - Fri : 08:00 - 18:00 <br>
+                                        Saturday : 08:00 - 14:00 <br>
+                                        Sunday: CLOSED</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center text-center text-md-left">
+                            <div>
+                                <h1 class="description-title-contact py-md-4">Supcom Junior Entreprise</h1>
+                                <span>
+                                    <p class="description-paragraph-contact">Created in 2013, Sup'com Junior-Entreprise allows engineering students from Higher School of Communication of Tunis
+                                    SUP'COM to flourish in a professionalizing environment by mobilizing skills relating to engineering, computer science
+                                    and marketing.</p>
+                                    <!-- <p class="description-paragraph-contact">Honored by our history of excellence, our priority remains unchanged: a commitment to total customer satisfaction. We
+                                    form an extraordinary team we advise you, support you, bring you the best solutions for the realization of your
+                                    projects, even the most ambitious …</p> -->
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <footer id="copyright">
+                
+                </footer>
+    
+            </section>
+
+</div>
+    
+    <script type="module">
+        import glitchedWriter from 'https://cdn.skypack.dev/glitched-writer';
+        import { wait } from 'https://cdn.skypack.dev/glitched-writer';
+        let datenow=new Date().getTime();;
+        let dateEvent=new Date('January 21,2023 13:00:00').getTime();;
+        let count=dateEvent-datenow;
+        let days=Math.floor(count / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((count % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((count % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((count % (1000 * 60)) / 1000);
+      
+        function opacitym(){
+          let x=document.getElementsByClassName("glitch");
+        
+          x[0].setAttribute("opacity","1");
+          x[0].setAttribute("data-aos","fade-up");
+          PowerGlitch.glitch('.glitch');
+          let y=document.getElementsByClassName("bou")[0];
+          setTimeout(()=> {
+            y.style.opacity=0;}
+            ,6700);
+
+        }
+        function blinky(){
+          let x=document.getElementById("blink");
+          x.style.display="block";
+      
+          console.log(x.innerHTML);
+        }
+        const Writer = new glitchedWriter('#test', { letterize: true });
+        const Writer1 = new glitchedWriter('#yes', { letterize: true });
+        const Writer2 = new glitchedWriter('#no', { letterize: true });
+        (async  ()=> {
+          await wait(1000);
+          await Writer.write("CODE IN THE DARK ");
+          await wait(1200);
+          await Writer.add(" V2.0");
+          await wait(1500);
+          await Writer.write("This is only the beginning.");
+          await wait(1500);
+          await Writer.remove(100);
+          await opacitym();
+          await wait(7000);
+          await Writer.write("Only "+days.toString()+" days, "+hours.toString()+" hours, "+minutes.toString()+" minutes and "+seconds.toString()+" seconds are left.")
+          await wait(2500);
+          await Writer.write("Would you like to play?")
+          await wait(1000);
+          await Writer1.write("Yes");
+          await blinky();
+          await wait(1000);
+          await Writer2.write("No");
+      })();
+      </script>
+    <script>
+        AOS.init();
+      </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+
+    </script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/three.min.js"></script>
+    <script src="assets/js/hover-effect.umd.js"></script>
+    <script>
+        var myAnimation0 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img3.jpg',
+            image2: 'assets/images/slider/img3.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation1 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img3.jpg',
+            image2: 'assets/images/slider/img4.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation2 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img4.jpg',
+            image2: 'assets/images/slider/img5.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation3 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img5.jpg',
+            image2: 'assets/images/slider/img6.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation4 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img6.jpg',
+            image2: 'assets/images/slider/img7.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation5 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img7.jpg',
+            image2: 'assets/images/slider/img8.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation6 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img8.jpg',
+            image2: 'assets/images/slider/img9.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation7 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img9.jpg',
+            image2: 'assets/images/slider/img10.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        var myAnimation8 = new hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img10.jpg',
+            image2: 'assets/images/slider/img11.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        });
+        // var myAnimation9 = new hoverEffect({
+        //     parent: document.querySelector('.containerr'),
+        //     intensity: 0.5,
+        //     image1: 'assets/images/slider/img11.jpg',
+        //     image2: 'assets/images/slider/img12.jpg',
+        //     displacementImage: "assets/images/6.jpg",
+        //     hover:false
+        // });
+        console.log(this["myAnimation"+1].next == myAnimation1.next)
+        let sections=Array.from(document.getElementsByTagName("section"));
+        for (i=0; i<sections.length;i++){
+          if (i!=sections.length-1){
+          console.log('i',i);
+          sections[i].addEventListener('wheel', (this["myAnimation"+(i+1)]).next);
+          document.querySelector('.test'+(i+2).toString()).addEventListener('click', (this["myAnimation"+(i+1)]).next);
+          for (j=0; j<sections.length; j++){
+            if (j!=i+1){
+              console.log(sections.length-1);
+            sections[i].addEventListener('wheel', this["myAnimation"+(j)].previous);
+            document.querySelector('.test'+(i+2).toString()).addEventListener('click', this["myAnimation"+(j)].previous)
+            }
+          }}
+          else{
+            console.log('ij',i)
+            sections[i].addEventListener('wheel', (this["myAnimation"+(0)]).next);
+          document.querySelector('.test'+(1).toString()).addEventListener('click', (this["myAnimation"+(0)]).next);
+          for (j=1; j<sections.length; j++){
+              console.log('j',j);
+            sections[i].addEventListener('wheel', this["myAnimation"+(j)].previous);
+            document.querySelector('.test'+(1).toString()).addEventListener('click', this["myAnimation"+(j)].previous)
+            
+          }
+ 
+          }
+        }
+    </script>
+    <script>
+
+        let addEvents = function () {
+    let pagButtons = Array.from(
+    document.getElementById("pagination").querySelectorAll("button"));
+    let canvas=Array.from(document.getElementsByTagName("canvas"));
+    canvas[0].style.display="block";
+    
+    let sections=Array.from(document.getElementsByTagName("section"));
+    sections[0].style.display="block";
+    pagButtons.forEach((el) => {
+    
+    el.addEventListener("click", function () {      
+    
+        document
+          .getElementById("pagination")
+          .querySelectorAll(".active")[0].className = "";
+        canvas[el.getAttribute('data-slide')].style.display="block";
+        sections[el.getAttribute('data-slide')].style.display="block";
+        for(let i=0; i<pagButtons.length; i++){
+            if (i!=el.getAttribute('data-slide')){
+              
+                canvas[i].style.display="none";
+                sections[i].style.display="none";
+                
+            }
+        }
+     
+        this.className = "active";
+
+         })})
+
+    
+    sections.forEach((el) => {
+      el.addEventListener("wheel", function () {
+
+        document
+          .getElementById("pagination")
+          .querySelectorAll(".active")[0].className = "";
+        console.log(canvas[sections.indexOf(el)+1]);
+
+        if (sections.indexOf(el)!=8) {
+          canvas[sections.indexOf(el)+1].style.display="block";
+        sections[sections.indexOf(el)+1].style.display="block";
+        for(let i=0; i<sections.length; i++){
+            if (i!=sections.indexOf(el)+1){
+              console.log(i);
+                canvas[i].style.display="none";
+                sections[i].style.display="none"; }
+
+    }
+    pagButtons[sections.indexOf(el)+1].className = "active";}
+    else{
+      for(let i=1; i<sections.length; i++){
+            if (i!=sections.indexOf(el)+1){
+              console.log(i);
+                canvas[i].style.display="none";
+                sections[i].style.display="none"; }
+    }
+     
+      canvas[0].style.display="block";
+        sections[0].style.display="block";
+        pagButtons[0].className = "active";}
+  })})
+    }
+        
+    
+addEvents();
+  </script>
+
     <!-- slider packages -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
@@ -387,65 +744,9 @@
     <script src="https://cdn.jsdelivr.net/npm/glitched-writer/lib/index.min.js"></script>
     <script src="assets/js/sponsors.js"></script>
     <script src="assets/js/rules.js"></script>
-    <script src="assets/js/slider.js"></script>
-    <!-- header -->
-    <script type="module">
-        import glitchedWriter from 'https://cdn.skypack.dev/glitched-writer';
-        import { wait } from 'https://cdn.skypack.dev/glitched-writer';
-        let datenow = new Date().getTime();;
-        let dateEvent = new Date('January 21,2023 13:00:00').getTime();;
-        let count = dateEvent - datenow;
-        let days = Math.floor(count / (1000 * 60 * 60 * 24));
-        let hours = Math.floor((count % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        let minutes = Math.floor((count % (1000 * 60 * 60)) / (1000 * 60));
-        let seconds = Math.floor((count % (1000 * 60)) / 1000);
-
-        function opacitym() {
-            let x = document.getElementsByClassName("glitch");
-
-            x[0].setAttribute("opacity", "1");
-            x[0].setAttribute("data-aos", "fade-up");
-            PowerGlitch.glitch('.glitch');
-            let y = document.getElementsByClassName("bou")[0];
-            setTimeout(() => {
-                y.style.opacity = 0;
-            }
-                , 6700);
-
-        }
-        function blinky() {
-            let x = document.getElementById("blink");
-            x.style.display = "block";
-
-            console.log(x.innerHTML);
-        }
-
-
-
-        const Writer = new glitchedWriter('#test', { letterize: true });
-        const Writer1 = new glitchedWriter('#yes', { letterize: true });
-        const Writer2 = new glitchedWriter('#no', { letterize: true });
-        (async () => {
-            await wait(1000);
-            await Writer.write("CODE IN THE DARK ");
-            await wait(1200);
-            await Writer.add(" V2.0");
-            await wait(1500);
-            await Writer.write("This is only the beginning.");
-            await wait(1500);
-            await Writer.remove(100);
-            await opacitym();
-            await wait(7000);
-            await Writer.write("Only " + days.toString() + " days, " + hours.toString() + " hours, " + minutes.toString() + " minutes and " + seconds.toString() + " seconds are left.")
-            await wait(2500);
-            await Writer.write("Would you like to play?")
-            await wait(1000);
-            await Writer1.write("Yes");
-            await blinky();
-            await wait(1000);
-            await Writer2.write("No");
-        })();
-    </script>
+    <script src="assets/js/faq.js"></script>
+    <script src="assets/js/slider.js"></script>  <!--slider-->
+    
 </body>
 
 </html>
