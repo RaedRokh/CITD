@@ -73,7 +73,7 @@
         <div id="pagination">
             <button class="active test1" data-slide="0"></button>
             <button class="test2" data-slide="1"></button>
-            <button class="test3" data-slide="2"></button>
+            <button id="button-rules" class="test3" data-slide="2"></button>
             <button class="test4" data-slide="3"></button>
             <button class="test5" data-slide="4"></button>
             <button class="test6" data-slide="5"></button>
@@ -96,7 +96,7 @@
         <div id="anim">
             <div id="test">Welcome to our event</div>
             <div class="reply d-flex justify-content-between w-50">
-                <a class="yess d-flex" href="#nextsection">
+                <a class="yess d-flex mr-5" href="#nextsection">
                     <div id="blink">▶</div>
                     <div id="yes"></div>
                 </a>
@@ -137,8 +137,8 @@
     </section>
 
     <!-------------- Rules adn teaser ----------------->
-    <section id="rules-teaser">
-        <div>
+    <section id="rules-teaser" class="d-flex justify-content-center align-items-center">
+        <div style="height: max-content;">
         <h1 class="section-title">Rules</h1>
         <div id="terminal" class="container card">
             <div class="terminal-nav">
@@ -216,8 +216,8 @@
         </div>
         <div id="sponsors">
             <h1 class="section-title">Sponsors</h1>
-            <div class="container">
-                <div id="line1" class="customer-logos slider ">
+            <div class="container" >
+                <div id="line1" class="customer-logos slider">
                     <div class="slide"><img
                             src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
                     </div>
@@ -746,7 +746,7 @@
      
       canvas[0].style.display="block";
         sections[0].style.display="block";
-        
+
         canvas[0].style.visibility = "visible";
             sections[0].style.visibility = "visible";
 
