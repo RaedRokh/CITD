@@ -120,7 +120,7 @@
     <script src="assets/js/three.min.js"></script>
     <script src="assets/js/hover-effect.umd.js"></script>
     <script>
-        var myAnimation = new hoverEffect({
+        var myAnimation0 = new hoverEffect({
             parent: document.querySelector('.containerr'),
             intensity: 0.5,
             image1: 'assets/images/slider/img3.jpg',
@@ -151,54 +151,52 @@
             image2: 'assets/images/slider/img2.jpg',
             displacementImage: "assets/images/6.jpg",
             hover:false
-        });
-        
-        function anime(i){
-          return new hoverEffect({
-            parent: document.querySelector('.containerr'),
-            intensity: 0.5,
-            image1: 'assets/images/slider/img'+(i+2).toString()+'.jpg',
-            image2: 'assets/images/slider/img'+(i+3).toString()+'.jpg',
-            displacementImage: "assets/images/6.jpg",
-            hover:false
         })
-        }
-        console.log(myAnimation1.next)
-        console.log(anime(1).next);
+        console.log(this["myAnimation"+1].next == myAnimation1.next)
         let sections=Array.from(document.getElementsByTagName("section"));
-  
-        sections[3].addEventListener('wheel', myAnimation.next);
-        sections[3].addEventListener('wheel', myAnimation1.previous);
-        sections[3].addEventListener('wheel', myAnimation2.previous);
-        sections[3].addEventListener('wheel', myAnimation3.previous);
-        document.querySelector('.test1').addEventListener('click', myAnimation.next);
-        document.querySelector('.test1').addEventListener('click', myAnimation1.previous);
-        document.querySelector('.test1').addEventListener('click', myAnimation2.previous);
-        document.querySelector('.test1').addEventListener('click', myAnimation3.previous);
-        sections[0].addEventListener('wheel', myAnimation1.next);
-        sections[0].addEventListener('wheel', myAnimation.previous);
-        sections[0].addEventListener('wheel', myAnimation2.previous);
-        sections[0].addEventListener('wheel', myAnimation3.previous);
-        document.querySelector('.test2').addEventListener('click', anime(1).next);
-        document.querySelector('.test2').addEventListener('click', myAnimation.previous);
-        document.querySelector('.test2').addEventListener('click', myAnimation2.previous);
-        document.querySelector('.test2').addEventListener('click', myAnimation3.previous);
-        sections[1].addEventListener('wheel', myAnimation2.next);
-        sections[1].addEventListener('wheel', myAnimation.previous);
-        sections[1].addEventListener('wheel', myAnimation3.previous);
-        sections[1].addEventListener('wheel', myAnimation1.previous);
-        document.querySelector('.test3').addEventListener('click', myAnimation2.next);
-        document.querySelector('.test3').addEventListener('click', myAnimation.previous);
-        document.querySelector('.test3').addEventListener('click', myAnimation3.previous);
-        document.querySelector('.test3').addEventListener('click', myAnimation1.previous);
-        sections[2].addEventListener('wheel', myAnimation3.next);
-        sections[2].addEventListener('wheel', myAnimation.previous);
-        sections[2].addEventListener('wheel', myAnimation1.previous);
-        sections[2].addEventListener('wheel', myAnimation2.previous);
-        document.querySelector('.test4').addEventListener('click', myAnimation3.next);
-        document.querySelector('.test4').addEventListener('click', myAnimation.previous);
-        document.querySelector('.test4').addEventListener('click', myAnimation1.previous);
-        document.querySelector('.test4').addEventListener('click', myAnimation2.previous);
+        for (i=0; i<sections.length-1;i++){
+          console.log('i',i);
+          sections[i].addEventListener('wheel', (this["myAnimation"+(i+1)]).next);
+          document.querySelector('.test'+(i+1).toString()).addEventListener('click', (this["myAnimation"+(i+1)]).next);
+          for (j=0; j<sections.length; j++){
+            if (j!=i+1){
+              console.log('j',j);
+            sections[j].addEventListener('wheel', this["myAnimation"+(j)].previous);
+            }
+          }
+        }
+        // sections[3].addEventListener('wheel', myAnimation0.next);
+        // sections[3].addEventListener('wheel', myAnimation1.previous);
+        // sections[3].addEventListener('wheel', myAnimation2.previous);
+        // sections[3].addEventListener('wheel', myAnimation3.previous);
+        // document.querySelector('.test1').addEventListener('click', myAnimation0.next);
+        // document.querySelector('.test1').addEventListener('click', myAnimation1.previous);
+        // document.querySelector('.test1').addEventListener('click', myAnimation2.previous);
+        // document.querySelector('.test1').addEventListener('click', myAnimation3.previous);
+        // sections[0].addEventListener('wheel', myAnimation1.next);
+        // sections[0].addEventListener('wheel', myAnimation0.previous);
+        // sections[0].addEventListener('wheel', myAnimation2.previous);
+        // sections[0].addEventListener('wheel', myAnimation3.previous);
+        // document.querySelector('.test2').addEventListener('click', .next);
+        // document.querySelector('.test2').addEventListener('click', myAnimation0.previous);
+        // document.querySelector('.test2').addEventListener('click', myAnimation2.previous);
+        // document.querySelector('.test2').addEventListener('click', myAnimation3.previous);
+        // sections[1].addEventListener('wheel', myAnimation2.next);
+        // sections[1].addEventListener('wheel', myAnimation0.previous);
+        // sections[1].addEventListener('wheel', myAnimation3.previous);
+        // sections[1].addEventListener('wheel', myAnimation1.previous);
+        // document.querySelector('.test3').addEventListener('click', myAnimation2.next);
+        // document.querySelector('.test3').addEventListener('click', myAnimation0.previous);
+        // document.querySelector('.test3').addEventListener('click', myAnimation3.previous);
+        // document.querySelector('.test3').addEventListener('click', myAnimation1.previous);
+        // sections[2].addEventListener('wheel', myAnimation3.next);
+        // sections[2].addEventListener('wheel', myAnimation0.previous);
+        // sections[2].addEventListener('wheel', myAnimation1.previous);
+        // sections[2].addEventListener('wheel', myAnimation2.previous);
+        // document.querySelector('.test4').addEventListener('click', myAnimation3.next);
+        // document.querySelector('.test4').addEventListener('click', myAnimation0.previous);
+        // document.querySelector('.test4').addEventListener('click', myAnimation1.previous);
+        // document.querySelector('.test4').addEventListener('click', myAnimation2.previous);
     </script>
     <script>
     
@@ -211,8 +209,8 @@
     let sections=Array.from(document.getElementsByTagName("section"));
     sections[0].style.display="block";
     pagButtons.forEach((el) => {
-      
-    el.addEventListener("click", function () {
+    
+    el.addEventListener("click", function () {      
     
         document
           .getElementById("pagination")
