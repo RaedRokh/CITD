@@ -82,6 +82,16 @@
 
 .reply {
     transform: translateY(100px);
+    width: 100vw;
+    
+}
+
+@media screen and (max-width: 767px){
+    .reply{
+        padding-left: 0;
+            margin-left: 0;
+            left: 0;
+    }
 }
 
 #test,
@@ -703,6 +713,7 @@ body{
 #rules-teaser .section-title{
     color: white;
     font-family: var(--regular-font);
+    padding-bottom: 3vh;
 }
 
 #control-pannels{
@@ -743,7 +754,7 @@ body{
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     overflow: hidden;
-    height: 70vh;
+    height: max-content;
 }
 
 .terminal-nav{
@@ -751,7 +762,7 @@ body{
 }
 
 #rules-text{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: var(--pink1);
 }
 
@@ -2428,7 +2439,7 @@ h1:nth-child(3) {
 .chat-messages-title{
     background-color: rgba(0, 0, 0, 0.301);
     color: white;
-    height: 13%;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2441,15 +2452,15 @@ h1:nth-child(3) {
 
 .questions{
     background-color: var(--purple);
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     padding: 0;
 }
 
 .chat-section{
     background-color: var(--blue);
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     padding: 0;
 }
 
@@ -2559,6 +2570,8 @@ h1:nth-child(3) {
     margin-inline: 1vw;
 }
 
+
+
 .question{
     display: inline-block;
     border: 1px solid black;
@@ -2596,7 +2609,7 @@ h1:nth-child(3) {
 
 @media screen and (max-width : 767px) {
     .questions {
-        height: 35vh;
+        height: 25vh;
         border-bottom-left-radius: 2px;
         border-bottom-right-radius: 2px;
         border-top-right-radius: 0;
@@ -2645,9 +2658,13 @@ h1:nth-child(3) {
     width: 40vw;
     padding-block: 5vh;
     height: max-content;
-    border-radius: 0px;
+    border-radius: 3px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: black;
+    color: white;
+    background-color: #000;
+    border: 0;
+    backdrop-filter: blur(10px);
+    opacity: 0.9;
 }
 
 @media screen and (max-width : 767px) {
