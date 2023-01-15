@@ -263,7 +263,7 @@
 
     <!---------------Register-------------->
     <section id="register" class="d-flex justify-content-center align-items-center">
-        <div id="buttons" class="" style="height: max-content;">
+        <div id="buttons" class="" style="height: max-content; display: none;">
             <h1 class="text-center">Are You A</h1>
             <div class="container-fluid">
                 <div class="row">
@@ -679,12 +679,18 @@
           .querySelectorAll(".active")[0].className = "";
         canvas[el.getAttribute('data-slide')].style.display="block";
         sections[el.getAttribute('data-slide')].style.display="block";
+        if (el.getAttribute('data-slide')==5){
+            var m=document.getElementById('buttons');
+            m.style.display='block';}
+            var n=document.getElementById('register-form');
+
+        
         for(let i=0; i<pagButtons.length; i++){
             if (i!=el.getAttribute('data-slide')){
-              
                 canvas[i].style.display="none";
                 sections[i].style.display="none";
-                
+
+            
             }
         }
      
