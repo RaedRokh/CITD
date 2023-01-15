@@ -89,7 +89,7 @@
                     <div class="sje"><span>Supcom Junior Entreprise</span></div>
 
                 </a>
-                <a id="nav-link-register" href="#register"><button id="register-navbar" class="button accept-btn">Register</button></a>
+                <a id="nav-link-register" onclick="transi()" onclick="trasnii()"><button id="register-navbar" class="button accept-btn">Register</button></a>
             </div>
         </nav>
 
@@ -656,11 +656,16 @@
             
           }
  
-          }
+          };
+
         }
+        document.getElementById('nav-link-register').addEventListener('click',myAnimation5.next);
+          for (i=0; i<sections.length;i++){
+
+          }
     </script>
     <script>
-
+        
         let addEvents = function () {
     let pagButtons = Array.from(
     document.getElementById("pagination").querySelectorAll("button"));
@@ -680,7 +685,7 @@
     pagButtons.forEach((el) => {
     
     el.addEventListener("click", function () {      
-    
+        
         document
           .getElementById("pagination")
           .querySelectorAll(".active")[0].className = "";
@@ -688,12 +693,6 @@
         sections[el.getAttribute('data-slide')].style.display="block";
         canvas[el.getAttribute('data-slide')].style.visibility = "visible";
         sections[el.getAttribute('data-slide')].style.visibility = "visible";
-        if (el.getAttribute('data-slide')==5){
-            var m=document.getElementById('buttons');
-            m.style.display='block';}
-            var n=document.getElementById('register-form');
-
-        
         for(let i=0; i<pagButtons.length; i++){
             if (i!=el.getAttribute('data-slide')){
                 canvas[i].style.display="none";
@@ -753,7 +752,31 @@
         pagButtons[0].className = "active";}
   })})
     }
-        
+    function transi(){
+        let pagButtons = Array.from(
+    document.getElementById("pagination").querySelectorAll("button"));
+        let canvas=Array.from(document.getElementsByTagName("canvas"));
+        let sections=Array.from(document.getElementsByTagName("section"));
+        document
+          .getElementById("pagination")
+          .querySelectorAll(".active")[0].className = "";
+        canvas[5].style.display="block";
+        sections[5].style.display="block";
+        canvas[5].style.visibility = "visible";
+        sections[5].style.visibility = "visible";
+        for(let i=0; i<pagButtons.length; i++){
+            if (i!=5){
+                canvas[i].style.display="none";
+                sections[i].style.display="none";
+                canvas[i].style.visibility = "hidden";
+                sections[i].style.visibility = "hidden";
+            
+            }
+        }
+     
+        pagButtons[5].className = "active";
+
+    }
     
 addEvents();
   </script>
