@@ -32,10 +32,10 @@ if (command.innerHTML === "" && isInViewport(command)) {
     typeWriter(commandRules, command, 100)
     setTimeout(() => {
         rules.classList.remove("hide");
-    }, commandRules.length * 150);
+    }, commandRules.length * 100 + 300);
     setTimeout(() => {
         nextCom.classList.remove("hide");
-    }, commandRules.length * 150 + 750);
+    }, commandRules.length * 100 + 400);
 } else {
     var ScrollDebounce = true;
     $(document).on('scroll',
