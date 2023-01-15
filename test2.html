@@ -152,6 +152,18 @@
             displacementImage: "assets/images/6.jpg",
             hover:false
         });
+        
+        function anime(i){
+          hoverEffect({
+            parent: document.querySelector('.containerr'),
+            intensity: 0.5,
+            image1: 'assets/images/slider/img'+i.toString()+'.jpg',
+            image2: 'assets/images/slider/img'+i.toString()+'.jpg',
+            displacementImage: "assets/images/6.jpg",
+            hover:false
+        })
+        }
+        console.log(anime(2));
         let sections=Array.from(document.getElementsByTagName("section"));
   
         sections[3].addEventListener('wheel', myAnimation.next);
