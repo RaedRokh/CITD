@@ -537,6 +537,7 @@ html{
 
 
 body{
+    overflow: hidden;
     font-family: var(--regular-font);
 }
 
@@ -597,7 +598,7 @@ body{
     background-color: rgba(0, 0, 0, 0.1);
     position:absolute   ;
     width:100%;
-    z-index:100 !important;
+    z-index:200000000 !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -658,10 +659,7 @@ body{
 
 
 /*********hero Section*******/
-#hero{
-    background-image: linear-gradient(to right, var(--purple), var(--pink2));
-    height: 100vh;
-}
+
 
 
 /*********description*******/
@@ -681,7 +679,6 @@ body{
 #rules-teaser{
     height: 100vh;
     font-family: var(--roboto-font);
-    background-color: #000;
 }
 
 #control-pannels{
@@ -748,7 +745,7 @@ body{
 
 #gallery {
     overflow: hidden;
-    background: black;
+
     height: 100vh;
 }
 
@@ -970,7 +967,7 @@ body{
 .slick-slide img {
     display: block;
 }
-cust
+
 .slick-slide.slick-loading img {
     display: none;
 }
@@ -1015,11 +1012,7 @@ cust
     font-size: 1.13em;
     font-weight: bold;
     padding: 10vh 10vw;
-
     color: white;
-    position: absolute;
-    background-position: center;
-    background-size: cover;
 }
 
 .btn-3d {
@@ -1477,9 +1470,7 @@ h1:nth-child(3) {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/assets/images/backgrounds/location.png");
-    background-position: center;
-    background-size: cover;
+
 }
 
 #location > .container > .section-title {
@@ -1737,7 +1728,7 @@ h1:nth-child(3) {
 /*************** faq  ***********/
 #faq{
     height: 100vh;
-    background-color: black;
+
     color: white;
 }
 

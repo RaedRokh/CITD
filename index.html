@@ -665,6 +665,11 @@
     
     let sections=Array.from(document.getElementsByTagName("section"));
     sections[0].style.display="block";
+    for (i=1; i<sections.length;i++){
+        canvas[i].style.display="none";
+        sections[i].style.display="none";
+
+    }
     pagButtons.forEach((el) => {
     
     el.addEventListener("click", function () {      
