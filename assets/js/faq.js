@@ -1,19 +1,17 @@
 let questions = {
-    "Where is the event ?":"yes",
-    "How can i get my tickets?":"no",
-    "Is the Evenet free ?":"yes",
-    "Do i need to know html and css ?": "no",
-    "floox": "no",
-    "read?": "no",
-    "blzaze, sdf ksodf " : "fsdfsdf sd"
-    
+    "Who can participate?": "Anyone can participate. Whether you're a competitor or a participant, Code in the Dark 2.0 is open to everyone to code, win and enjoy the experience.",
+    "Why should I participate ?": "It’s a perfect occasion to not only relax after exams and work but also win valuable gifts and exchange knowledge with highly qualified people.",
+    "How much does it cost ?": "No participation fees are required.",
+    "Is the event online or offline ?": "It's an on site event.",
+    "Is there any age limit ?": "No, anyone can participate.",
+    "Do I need to master HTML and/or CSS?": "No, the competition is beginner friendly and only requires basic knowledge.",
 }
 
 let questionsContainer = $(".questions-container");
 let chatInput = $(".chat-input");
 
-Object.keys(questions).map((question,index) => {
-    questionsContainer.append('<div class="question"><button>'+question+'</button></div>');
+Object.keys(questions).map((question, index) => {
+    questionsContainer.append('<div class="question"><button>' + question + '</button></div>');
 })
 
 let question = $(".question");
@@ -49,7 +47,7 @@ function updateScrollChat() {
 }
 
 var speed = 20;
-function typeWriter(element,txt) {
+function typeWriter(element, txt) {
     var i = 0;
     x = setInterval(() => {
         if (i < txt.length) {

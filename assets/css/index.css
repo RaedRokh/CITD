@@ -2175,10 +2175,6 @@ h1:nth-child(3) {
         font-size:1.5rem;
     }
 
-    .map{
-        filter: grayscale(100%) invert(100%) contrast(80%);
-    }
-
     .postcard .media.postcard__text:before {
         content: "";
         position: absolute;
