@@ -11,6 +11,7 @@
         import glitchedWriter from 'https://cdn.skypack.dev/glitched-writer';
     </script>
     <script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/test.css">
@@ -94,7 +95,7 @@
         </nav>
 
         <div id="anim">
-            <div id="test">Welcome to our event</div>
+            <div id="test" class="text-center">Welcome to our event</div>
             <div class="reply d-flex justify-content-between w-50">
                 <a class="yess d-flex mr-5" href="#nextsection">
                     <div id="blink">▶</div>
@@ -434,54 +435,65 @@
         <!-- <div id="cover-contact"> -->
     
     
-            <section id="contact" class="">
-                <h1 class="section-title">Contact Us</h1>
-                <div class=" container-fluid">
-                    <div class="row contact-content">
-                        <div class="col-12 col-md-6 order-2 order-md-1 d-flex align-items-center justify-content-center">
-                            <div class="card contact-card">
-                                <div class="coordinate">
-                                    <img src="/assets/images/location-map.png" alt="">
-                                    <p>Supcom ,
-                                        Cité Technologique des Communication</p>
-                            
+            <section id="contact" class="d-flex flex-column justify-content-between">
+                <div class="contact-cont">
+                    <h1 class="section-title">Contact Us</h1>
+                    <div class=" container-fluid">
+                        <div class="row contact-content">
+                            <div class="col-12 col-md-6 order-2 order-md-1 d-flex align-items-center justify-content-center">
+                                <div class="card contact-card">
+                                    <div class="coordinate">
+                                        <img src="/assets/images/location-map.png" alt="">
+                                        <p>Supcom ,
+                                            Cité Technologique des Communication</p>
+                                
+                                    </div>
+                                    <div class="coordinate">
+                                        <img src="/assets/images/mail.png" alt="">
+                                        <p>junior.entreprise@supcom.tn</p>
+                                    </div>
+                                    <div class="coordinate">
+                                        <img src="/assets/images/phone.png" alt="">
+                                        <p>(216) 23 010 042</p>
+                                    </div>
+                                    <!-- <div class="coordinate">
+                                        <img src="/assets/images/working.png" alt="">
+                                        <p>Mon - Fri : 08:00 - 18:00 <br>
+                                            Saturday : 08:00 - 14:00 <br>
+                                            Sunday: CLOSED</p>
+                                    </div> -->
                                 </div>
-                                <div class="coordinate">
-                                    <img src="/assets/images/mail.png" alt="">
-                                    <p>junior.entreprise@supcom.tn</p>
-                                </div>
-                                <div class="coordinate">
-                                    <img src="/assets/images/phone.png" alt="">
-                                    <p>(216) 23 010 042</p>
-                                </div>
-                                <!-- <div class="coordinate">
-                                    <img src="/assets/images/working.png" alt="">
-                                    <p>Mon - Fri : 08:00 - 18:00 <br>
-                                        Saturday : 08:00 - 14:00 <br>
-                                        Sunday: CLOSED</p>
-                                </div> -->
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center text-center text-md-left">
-                            <div>
-                                <h1 class="description-title-contact py-md-4">Supcom Junior Entreprise</h1>
-                                <span>
-                                    <p class="description-paragraph-contact">Created in 2013, Sup'com Junior-Entreprise allows engineering students from Higher School of Communication of Tunis
-                                    SUP'COM to flourish in a professionalizing environment by mobilizing skills relating to engineering, computer science
-                                    and marketing.</p>
-                                    <!-- <p class="description-paragraph-contact">Honored by our history of excellence, our priority remains unchanged: a commitment to total customer satisfaction. We
-                                    form an extraordinary team we advise you, support you, bring you the best solutions for the realization of your
-                                    projects, even the most ambitious …</p> -->
-                                    </span>
+                            <div class="col-12 col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center text-center text-md-left">
+                                <div>
+                                    <h1 class="description-title-contact py-md-4">Supcom Junior Entreprise</h1>
+                                    <span class="mr-5">
+                                        <p class="description-paragraph-contact">Created in 2013, Sup'com Junior-Entreprise allows engineering students from Higher School of Communication of Tunis
+                                        SUP'COM to flourish in a professionalizing environment by mobilizing skills relating to engineering, computer science
+                                        and marketing.</p>
+                                        <!-- <p class="description-paragraph-contact">Honored by our history of excellence, our priority remains unchanged: a commitment to total customer satisfaction. We
+                                        form an extraordinary team we advise you, support you, bring you the best solutions for the realization of your
+                                        projects, even the most ambitious …</p> -->
+                                        </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <footer id="copyright">
-                
+                        <div>&copy <span id="year">2023</span> Supcom Junior Entreprise</div>
+                        <div class="d-flex ">
+                            <div class="social-menu">
+                                <ul>
+                                    <li><a href="https://github.com/sanketbodke" target="blank"><i class="fab fa-facebook"></i></i></a></li>
+                                    <li><a href="https://www.instagram.com/imsanketbodke/" target="blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                 </footer>
-    
             </section>
 
 </div>
