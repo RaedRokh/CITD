@@ -7,6 +7,13 @@ let registerContainer = $("#register-container");
 let participant = $("#participant");
 let roister = $("#roister");
 let players = $("#players");
+let registerImage = $("#register-image")
+
+
+//Image variables
+
+let participantImage = "../images/register/player.jpg";
+let roisterImage = "../images/register/roister.jpg";
 
 function buttonsClickHandler() {
     buttons.addClass("hide");
@@ -22,10 +29,14 @@ function buttonsClickHandler() {
 participant.click(() => {
     buttonsClickHandler();
     players.val("participant");
+    registerImage.addClass("participant");
+    registerImage.removeClass("roister");
 })
 roister.click(() => {
     buttonsClickHandler();
     players.val("roister");
+    registerImage.removeClass("participant");
+    registerImage.addClass("roister");
 })
 
 registerBtn.click((e) => {

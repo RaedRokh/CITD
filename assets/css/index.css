@@ -1251,13 +1251,13 @@ section{
     transition: all 0.3s ease;
 }
 
-#register-image{
-    background: url("assets/images/slider/img3.jpg");
+/* #register-image{
+    background: url("assets/images/register/player.jpg");
     background-position: center;
     background-size: cover;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-}
+} */
 
 .register-input{
     width: 100%;
@@ -1578,8 +1578,15 @@ h1:nth-child(3) {
     transition: all 0.3s ease;
 }
 
+.participant{
+    background: url("../images/register/player.jpg");
+}
+
+.roister{
+    background: url("../images/register/roister.jpg");
+}
+
 #register-image{
-    background: url("assets/images/slider/img3.jpg");
     background-position: center;
     background-size: cover;
     border-top-left-radius: 3px;
