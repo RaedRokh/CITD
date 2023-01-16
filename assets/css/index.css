@@ -1237,7 +1237,7 @@ section{
 
 #register-form{
     font-family: var(--regular-font);
-    color: #2a234e;
+    color: white;
     
     padding-block: 5vh ;
     padding-inline: 5vw;
