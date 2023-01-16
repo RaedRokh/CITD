@@ -26,8 +26,8 @@
     box-sizing: border-box;
 }
 
-#hero {
-}
+/* #hero {
+} */
 
 #anim {
     height: 100vh;
@@ -794,6 +794,11 @@ section{
     height: 50vh;
 }
 
+.partner-group{
+    margin: 0;
+    padding: 0;
+}
+
 #partners > .section-title{
     margin-top:0;
 }
@@ -804,7 +809,7 @@ section{
     max-width: 80%;
 }
 
-@media screen and (max-width : 767px) {
+@media screen and (max-width : 992px) {
     #partner-1{
         opacity: 1;
         animation: alter2 5s;
@@ -816,39 +821,165 @@ section{
         animation :alter1 5s;
         animation-iteration-count: infinite;
     }
-    @keyframes alter1 {
-        0%{
-            opacity:0;
-        }
-        40%{
-            opacity: 0.1;
-        }
-        50%{
-            opacity:1;
-        }
-        90%{
-            opacity:0.9;
-        }
-        100%{
-            opacity:0;
-        }
+
+    #partner-3{
+        opacity: 1;
+        animation: alter2 5s;
+        animation-iteration-count: infinite;
     }
-    @keyframes alter2 {
-        0%{
-            opacity:1;
-        }
-        40%{
-            opacity: 0.9;
-        }
-        50%{
-            opacity:0;
-        }
-        90%{
-            opacity:0.1;
-        }
-        100%{
-            opacity:1;
-        }
+    #partner-4{
+        opacity:0;
+        position: absolute;
+        right: 0;
+        animation :alter1 5s;
+        animation-iteration-count: infinite;
+    }  
+}
+
+
+@media screen and (max-width : 767px) {
+    #partner-1 {
+        opacity: 1;
+        animation: part1 7.5s;
+        animation-iteration-count: infinite;
+    }
+
+    #partner-2 {
+        opacity: 0;
+        position: absolute;
+        animation: part2 7.5s;
+        animation-iteration-count: infinite;
+    }
+
+    #partner-3 {
+        opacity: 0;
+        position: absolute;
+        animation: part3 7.5s;
+        animation-iteration-count: infinite;
+    }
+
+    #partner-4 {
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        animation: part4 7.5s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes part1{
+    0%{opacity: 1;}
+    25%{opacity: 0;}
+    50%{opacity: 0;}
+    75%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes part2 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes part3 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes part4 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes alter1 {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes alter2 {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0.9;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
