@@ -1,6 +1,7 @@
 let thanks = $(".thanks");
 let buttons = $("#buttons");
 let registerBtn = $("#register-button-section");
+let returnBtn = $("#return-button-section");
 let form = $("#register-form");
 let registerContainer = $("#register-container");
 let participant = $("#participant");
@@ -13,7 +14,7 @@ function buttonsClickHandler() {
         buttons.addClass("remove");
         registerContainer.removeClass("remove");
         setTimeout(() => {
-            registerContainer.removeClass("hide"); 
+            registerContainer.removeClass("hide");
         }, 200);
     }, 200);
 }
@@ -33,4 +34,16 @@ registerBtn.click((e) => {
     form.css("visibility", "hidden");
     thanks.removeClass("hide");
     thanks.removeClass("remove");
+})
+
+returnBtn.click((e) => {
+    e.preventDefault();
+    buttons.removeClass("hide");
+    setTimeout(() => {
+        buttons.removeClass("remove");
+        registerContainer.addClass("remove");
+        setTimeout(() => {
+            registerContainer.addClass("hide");
+        }, 200);
+    }, 200);
 })
