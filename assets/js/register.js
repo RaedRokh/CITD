@@ -10,6 +10,30 @@ let players = $("#players");
 let registerImage = $("#register-image")
 
 
+
+let pageButtons = $("#pagination > button");
+        let reg = $("#register");
+        let reg1 = document.getElementById("register");
+        let regBtn = $("#reg-btn");
+        let test = false;
+        pageButtons.click(() => {
+            if (test) {
+                reg.addClass("hide");
+                test=false;
+            }
+        })
+        regBtn.click(() => {
+            test = true;
+            reg.removeClass("hide");
+        })
+
+
+
+
+
+
+
+
 //Image variables
 
 let participantImage = "../images/register/player.jpg";

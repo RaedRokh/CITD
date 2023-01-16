@@ -12,6 +12,7 @@
     --roboto-font: 'Share Tech Mono', monospace;
 }
 
+
 #anim {
     font-family: var(--roboto-font);
     -webkit-font-smoothing: antialiased;
@@ -2693,6 +2694,16 @@ h1:nth-child(3) {
     margin-top: 2vh;
     margin-inline: 1vw;
     overflow: auto;
+}
+
+#sje-link{
+    text-decoration: none;
+    color: var(--pink1);
+    transition: color 0.2s ease;
+}
+
+#sje-link:hover{
+    color: var(--pink2);
 }
 
 .description-title-contact{

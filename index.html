@@ -29,7 +29,7 @@
             <button id="button-rules" class="test3" data-slide="2"></button>
             <button class="test4" data-slide="3"></button>
             <button class="test5" data-slide="4"></button>
-            <button class="test6" data-slide="5"></button>
+            <button id="reg-btn" class="test6" data-slide="5"></button>
             <button class="test7" data-slide="6"></button>
             <button class="test8" data-slide="7"></button>
             <button class="test9" data-slide="8"></button>
@@ -410,7 +410,7 @@
                                 </div>
                                 <div class="coordinate">
                                     <i class="fa fa-wifi" style="font-size:30px;margin-right:25px"></i></i>
-                                    <p><a href="https://supcomje.tn" target="_blank">www.supcomje.tn</a></p>
+                                    <p><a id="sje-link" href="https://supcomje.tn" target="_blank">www.supcomje.tn</a></p>
                                 </div>
                             </div>
                         </div>
@@ -452,6 +452,10 @@
         </section>
     </div>
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
     <script type="module">
         import glitchedWriter from 'https://cdn.skypack.dev/glitched-writer';
         import { wait } from 'https://cdn.skypack.dev/glitched-writer';
@@ -620,7 +624,6 @@
         document.getElementById('nav-link-register').addEventListener('click', myAnimation5.next);
     </script>
     <script>
-
         let addEvents = function () {
             let pagButtons = Array.from(
                 document.getElementById("pagination").querySelectorAll("button"));
@@ -740,10 +743,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    
     <!-- bootstraps -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
