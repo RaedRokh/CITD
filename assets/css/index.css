@@ -565,6 +565,7 @@ section{
 .section-title{
     padding: 5vh 10vw;
     text-align: center;
+    color:white !important;
 }
 
 .hide{
@@ -1116,7 +1117,7 @@ section{
 }
 
 #register-image{
-    background: url("/assets/images/slider/img3.jpg");
+    background: url("assets/images/slider/img3.jpg");
     background-position: center;
     background-size: cover;
     border-top-left-radius: 3px;
@@ -1428,7 +1429,7 @@ h1:nth-child(3) {
 }
 
 #register-image{
-    background: url("/assets/images/slider/img3.jpg");
+    background: url("assets/images/slider/img3.jpg");
     background-position: center;
     background-size: cover;
     border-top-left-radius: 3px;
@@ -2286,7 +2287,7 @@ h1:nth-child(3) {
 .chat-messages-title{
     background-color: rgba(0, 0, 0, 0.301);
     color: white;
-    height: 10vh;
+    padding:20px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2298,14 +2299,14 @@ h1:nth-child(3) {
 
 
 .questions{
-    background-color: var(--purple);
+    background: linear-gradient(to right, var(--blue)  ,  var(--purple));
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     padding: 0;
 }
 
 .chat-section{
-    background-color: var(--blue);
+    background: linear-gradient(to right, var(--purple)  ,  var(--blue));
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     padding: 0;
@@ -2448,6 +2449,10 @@ h1:nth-child(3) {
 
 
 @media screen and (max-width : 767px) {
+
+    .chat-messages-title{
+        padding:0px;
+    }
     .questions {
         height: 25vh;
         border-bottom-left-radius: 2px;
@@ -2457,7 +2462,7 @@ h1:nth-child(3) {
     }
 
     .chat-section {
-        height: calc(75vh - 35vh);
+        height: 40vh;
         border-top-right-radius: 2px;
         border-top-left-radius: 2px;
         border-bottom-left-radius: 0;
@@ -2466,14 +2471,14 @@ h1:nth-child(3) {
 
     .questions-container{
         margin-block: 2vh;
-        height: calc(100% - 4vh);
+        height: 40vh;
     }
 }
 
 #footer{
     height: 100vh;
     background-color: yellow;
-    background-image: url("/assets/images/backgrounds/1.png");
+    background-image: url("assets/images/backgrounds/1.png");
 }
 
 #contact{
